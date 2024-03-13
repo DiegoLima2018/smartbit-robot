@@ -1,0 +1,32 @@
+{
+    "create": {
+        "account": {
+            "name": "Wellington Avon",
+            "email": "WellingtonAvon@test.com",
+            "cpf": "35400747086"
+        },
+        "plan": "Plano Black",
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Wellington Avon",
+            "month": "12",
+            "year": "2032",
+            "cvv": "123"
+        }
+    },
+    "duplicate": {
+        "account": {
+            "name": "Galdino Silva",
+            "email": "GaldinoSilva@test.com",
+            "cpf": "78180915050"
+        },
+        "plan": "Plano Smart",
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Galdino Silva",
+            "month": "11",
+            "year": "2031",
+            "cvv": "123"
+        }
+    }
+}

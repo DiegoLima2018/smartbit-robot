@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-13T18:49:35.980634" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="C:\QAx\projects\smartbit-robot\tests\signup.robot">
+<test id="s1-t1" name="Deve iniciar o cadastro de cliente" line="10">
+<kw name="Start session" owner="Base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-03-13T18:49:37.221379" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\smartbit-robot\\logs\\signup\\browser\\traces\\de9c60b9-144d-4da3-a16c-f76dd41f4ce3"}</msg>
+<msg time="2024-03-13T18:49:38.119488" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\smartbit-robot\\logs\\signup\\browser\\traces\\de9c60b9-144d-4da3-a16c-f76dd41f4ce3"}</msg>
+<arg>browser=firefox</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-03-13T18:49:37.221379" elapsed="0.898109"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-03-13T18:49:44.149669" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2024-03-13T18:49:44.149669" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-03-13T18:49:38.119488" elapsed="6.030181"/>
+</kw>
+<status status="PASS" start="2024-03-13T18:49:37.221379" elapsed="6.928290"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-13T18:49:44.151669" level="INFO">${account} = {'name': 'Diego Lima', 'email': 'diegolima@teste.com.br', 'cpf': '99414605070'}</msg>
+<var>${account}</var>
+<arg>name=Diego Lima</arg>
+<arg>email=diegolima@teste.com.br</arg>
+<arg>cpf=99414605070</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.151669" elapsed="0.000000"/>
+</kw>
+<kw name="Delete Account By Email" owner="Database">
+<arg>${account}[email]</arg>
+<status status="PASS" start="2024-03-13T18:49:44.151669" elapsed="0.100010"/>
+</kw>
+<kw name="Submit signup form" owner="Landing">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-03-13T18:49:44.333681" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
+<arg>css=#signup h2</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro e venha para a Smartbit!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.253665" elapsed="0.080016"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-03-13T18:49:44.335703" level="INFO">Fills the text 'Diego Lima' in the given field.</msg>
+<arg>id=name</arg>
+<arg>${account}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.335703" elapsed="0.032000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-03-13T18:49:44.369680" level="INFO">Fills the text 'diegolima@teste.com.br' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${account}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.367703" elapsed="0.033979"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-03-13T18:49:44.403682" level="INFO">Fills the text '99414605070' in the given field.</msg>
+<arg>id=cpf</arg>
+<arg>${account}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.403682" elapsed="0.030000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button &gt;&gt; text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-03-13T18:49:44.433682" elapsed="0.136568"/>
+</kw>
+<arg>${account}</arg>
+<status status="PASS" start="2024-03-13T18:49:44.253665" elapsed="0.316585"/>
+</kw>
+<kw name="Verify welcome message" owner="Welcome">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-03-13T18:49:49.731648" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-13T18:49:49.731648" level="INFO">See also file:///C:/QAx/projects/smartbit-robot/logs/signup/playwright-log.txt for additional details.</msg>
+<msg time="2024-03-13T18:49:49.731648" level="FAIL">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<arg>text=Falta pouco para fazer parte da família Smartbit!</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2024-03-13T18:49:44.572247" elapsed="5.291071">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</kw>
+<status status="FAIL" start="2024-03-13T18:49:44.572247" elapsed="5.291071">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-03-13T18:49:49.916640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-03-13T18:49:49.863318" elapsed="0.054338"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-03-13T18:49:37.205735" elapsed="12.711921">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</test>
+<test id="s1-t2" name="Tentativa de pré-cadastro" line="22">
+<kw name="Start session" owner="Base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-03-13T18:49:49.986371" level="INFO">Switching browser to browser=810de85f-7067-460f-81d3-627f8ff214bb</msg>
+<msg time="2024-03-13T18:49:49.988370" level="INFO">Successfully changed active browser: browser=810de85f-7067-460f-81d3-627f8ff214bb</msg>
+<msg time="2024-03-13T18:49:49.988370" level="INFO">Reusing existing browser with id: browser=810de85f-7067-460f-81d3-627f8ff214bb</msg>
+<arg>browser=firefox</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-03-13T18:49:49.986371" elapsed="0.001999"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-03-13T18:51:02.258000" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-03-13T18:51:02.258000" level="INFO">See also file:///C:/QAx/projects/smartbit-robot/logs/signup/playwright-log.txt for additional details.</msg>
+<msg time="2024-03-13T18:51:02.258000" level="FAIL">Execution terminated by signal</msg>
+<arg>http://localhost:3000</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2024-03-13T18:49:49.988370" elapsed="72.364464">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2024-03-13T18:49:49.984375" elapsed="72.368459">Execution terminated by signal</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-03-13T18:51:02.352834" level="FAIL">ConnectionError: Playwright process has been terminated with code 130</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2024-03-13T18:51:02.352834" elapsed="0.031273">ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<status status="FAIL" start="2024-03-13T18:49:49.982373" elapsed="72.401734">Setup failed:
+Execution terminated by signal
+
+Also teardown failed:
+ConnectionError: Playwright process has been terminated with code 130</status>
+</test>
+<doc>Cenários de testes de pré-cadastro de cliente</doc>
+<status status="FAIL" start="2024-03-13T18:49:35.980634" elapsed="86.435163"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Signup">Signup</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-13T18:49:36.011908" level="WARN">Error in file 'C:\QAx\projects\smartbit-robot\resources\Base.resource' on line 36: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-13T18:51:02.415797" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: ConnectionError: Playwright process has been terminated with code 130</msg>
+<msg time="2024-03-13T18:51:02.415797" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: ConnectionError: Playwright process has been terminated with code 130</msg>
+</errors>
+</robot>

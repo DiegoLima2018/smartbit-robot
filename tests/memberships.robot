@@ -2,6 +2,7 @@
 Documentation        suite de testes de adesões de planos
 
 Resource        ../resources/Base.resource
+Resource    ../resources/pages/memberships.resource
 
 Test Setup           Start session
 Test Teardown        Take Screenshot
@@ -30,3 +31,13 @@ Não deve realizar adesão duplicada
     Go to memberships
     Create new membership      ${data}
     Toast should be            O usuário já possui matrícula.
+
+Deve buscar por nome
+    [Tags]    search
+
+    ${name}        Set Variable        Wellington Avon
+
+    SignIn admin
+    Go to memberships
+    Search by name           ${name}
+    Should filter by name    ${name} 

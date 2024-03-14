@@ -29,15 +29,31 @@ Não deve realizar adesão duplicada
 
     SignIn admin    
     Go to memberships
-    Create new membership      ${data}
-    Toast should be            O usuário já possui matrícula.
+    Create new membership           ${data}
+    Toast should be                 O usuário já possui matrícula.
 
 Deve buscar por nome
     [Tags]    search
 
-    ${name}        Set Variable        Wellington Avon
+    ${data}        Get Json fixture    memberships    search
+
+    Insert Membership               ${data}
 
     SignIn admin
     Go to memberships
-    Search by name           ${name}
-    Should filter by name    ${name} 
+    Search by name                  ${data}[account][name]
+    Should filter by name           ${data}[account][name]
+
+Deve excluir uma matricula
+    [Tags]    remove
+
+    ${data}        Get Json fixture    memberships    remove
+
+    Insert Membership               ${data}
+
+    SignIn admin
+    Go to memberships
+    Request removal                 ${data}[account][name]
+    Confirm removal
+    Membership should be visible    ${data}[account][name]
+    

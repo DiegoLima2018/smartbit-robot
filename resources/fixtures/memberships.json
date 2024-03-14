@@ -1,7 +1,7 @@
 {
     "create": {
         "account": {
-            "name": "Wellington Avon",
+            "name": "Wellington Rodrigues",
             "email": "WellingtonAvon@test.com",
             "cpf": "35400747086"
         },
@@ -30,8 +30,46 @@
             "price": 99.99
         },
         "credit_card": {
-            "number": "4242424242424242",
+            "number": "5555555555554444",
             "holder": "Galdino Silva",
+            "month": "11",
+            "year": "2031",
+            "cvv": "123"
+        }
+    },
+    "search": {
+        "account": {
+            "name": "Neire Silva",
+            "email": "neireSilva@test.com",
+            "cpf": "77050489069"
+        },
+        "plan": {
+            "name": "Plano Smart",
+            "id": 1,
+            "price": 99.99
+        },
+        "credit_card": {
+            "number": "5105105105105100",
+            "holder": "Neire Silva",
+            "month": "11",
+            "year": "2031",
+            "cvv": "123"
+        }
+    },
+    "remove": {
+        "account": {
+            "name": "Iolanda Lima",
+            "email": "iolandalima@test.com",
+            "cpf": "83398739032"
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": "2",
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "6011000990139424",
+            "holder": "Iolanda Lima",
             "month": "11",
             "year": "2031",
             "cvv": "123"

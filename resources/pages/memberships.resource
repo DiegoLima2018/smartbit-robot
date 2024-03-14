@@ -9,7 +9,7 @@ Create new membership
 
     Go to memberships form
     Select account            ${data}[account][name]          ${data}[account][cpf]
-    Select plan               ${data}[plan]
+    Select plan               ${data}[plan][name]
     Fill payment card         ${data}[credit_card]
 
     Click                     css=button[type=submit] >> text=Cadastrar

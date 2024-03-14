@@ -24,4 +24,4 @@ A aplicação web a ser testada se chama Smartbit, e se trata de um site que pos
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/DiegoLima2018/smartbit-robot).
+Você pode [acessar o código fonte do projeto](https://github.com/DiegoLima2018/smartbit-robot).

@@ -5,60 +5,16 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.0 (Python 3.12.2 on win32)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.12.2 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all">
-:root {
-    --text-color: black;
-    --background-color: white;
-    --primary-color: #ddd;
-    --secondary-color: #ccc;
-    --link-color: #15c;
-    --link-hover-color: #61c;
-    --highlight-color: #eee;
-    --target-color: #f9f9f9;
-    --pass-color: #97bd61;
-    --fail-color: #ce3e01;
-    --warn-color: #fed84f;
-    --pass-link-color: #098a09;
-    --warn-link-color: #927201;
-    --fail-link-color: #ce3e01;
-    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-    }
-}
-[data-theme="dark"] {
-    --text-color: #e2e1d7;
-    --background-color: #1c2227;
-    --primary-color: #26373b;
-    --secondary-color: #424f5a;
-    --link-color: #8cc4ff;
-    --link-hover-color: #bb86fc;
-    --highlight-color: #002b36;
-    --target-color: #1a252e;
-    --pass-link-color: #97bd61;
-    --warn-link-color: #fed84f;
-    --fail-link-color: #ff9b8f;
-    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-}
+<style media="all" type="text/css">
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black; /* Fallback value */
-    color: var(--text-color);
+    color: black;
     padding: 6px;
-    background: white; /* Fallback value */
-    background: var(--background-color);
-    margin-left: 15px;
-}
-body[theme-toggled] {
-    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+    background: white;
 }
 table {
     table-layout: fixed;
@@ -73,37 +29,20 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c; /* Fallback value */
-    color: var(--link-color);
+    color: #15c;
 }
 a > img {
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: #15c !important; /* Fallback value */
-    border-color: var(--link-color) !important;
+    border: 1px solid #15c !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c; /* Fallback value */
-    color: var(--link-hover-color);
-}
-select {
-    background-color: white; /* Fallback value */
-    background-color: var(--background-color);
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-radius: 4px;
+    color: #61c;
 }
 .parent-name {
     font-size: 0.7em;
@@ -116,7 +55,7 @@ select {
 #header {
     width: 65em;
     height: 3em;
-    margin: 20px 0 6px 0;
+    margin: 6px 0;
 }
 h1 {
     float: left;
@@ -144,17 +83,14 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important; /* Fallback value */
-    color: var(--fail-link-color) !important;
+    color: #ce3e01 !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important; /* Fallback value */
-    color: var(--pass-link-color) !important;
+    color: #098a09 !important;
 }
 .skip {
-    color: #927201 !important; /* Fallback value */
-    color: var(--warn-link-color) !important;
+    color: #927201 !important;
     font-weight: bold;
 }
 .label {
@@ -162,10 +98,8 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    color: black;
+    background-color: #ddd;
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -175,18 +109,15 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61; /* Fallback value */
-    background-color: var(--pass-color);
+    background-color: #97bd61;
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01; /* Fallback value */
-    background-color: var(--fail-color);
+    background-color: #ce3e01;
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f; /* Fallback value */
-    background-color: var(--warn-color);
+    background-color: #fed84f;
     color: #000 !important;
 }
 /* Top right header */
@@ -215,8 +146,7 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd; /* Fallback value */
-    background: var(--primary-color);
+    background: #ddd;
 }
 /* Statistics table */
 .statistics {
@@ -226,20 +156,15 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    background-color: #ddd;
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -275,33 +200,27 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     width: auto;
     height: 7px;
     padding: 0;
+    background: #aaa;
 }
 .empty-graph {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01; /* Fallback value */
-    background: var(--fail-color);
+    background: #ce3e01;
 }
 .pass-bar {
-    background: #97bd61; /* Fallback value */
-    background: var(--pass-color);
+    background: #97bd61;
 }
 .skip-bar {
-    background: #fed84f; /* Fallback value */
-    background: var(--warn-color);
+    background: #fed84f;
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -311,84 +230,30 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--secondary-color);
+    background-color: #ccc;
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--ascending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--descending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
-}
-#theme-toggle {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    padding: 4px;
-    z-index: 1000;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: var(--highlight-color);
-}
-[data-theme="dark"] .dark-mode-icon,
-[data-theme="light"] .light-mode-icon {
-    display: none;
-}
-[data-theme="dark"] .light-mode-icon,
-[data-theme="light"] .dark-mode-icon {
-    display: block;
-}
-@keyframes highlight {
-    0% {
-        background: var(--primary-color)
-    }
-    100% {
-        background: var(--target-color);
-    }
-}
-:target {
-    background: var(--target-color);
-    transition: background 0.3s;
-    animation: highlight 4s;
+    background-color: #ddd;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
-:root {
-    --icon-filter: invert(0);
-    --icon-highlight: var(--secondary-color);
-    --elapsed-color: #666;
-}
-/* @media (prefers-color-scheme: dark) { */
-[data-theme="dark"] {
-    --icon-filter: invert(1);
-    --icon-highlight: #a39990;
-    --elapsed-color: #999;
-}
 /* Containers */
 .suite, .test, #errors {
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -417,10 +282,8 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee; /* Fallback value */
-    background-color: var(--highlight-color);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    background-color: #eee;
+    border-color: #ccc;
 }
 .element-header-toggle {
     position: absolute;
@@ -430,14 +293,10 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -445,8 +304,7 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -466,31 +324,23 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
-    white-space: pre-wrap;
-}
-.arg, .assign {
-    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666; /* Fallback value */
-    color: var(--elapsed-color);
+    color: #666;
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
-    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
-    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -502,10 +352,7 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .link {
@@ -515,8 +362,7 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -557,16 +403,11 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -598,7 +439,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print">
+<style media="print" type="text/css">
 body {
     background: white !important;
     padding: 0;
@@ -638,7 +479,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -661,7 +502,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -673,12 +514,14 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
+    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
+    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -688,32 +531,24 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
-    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
 }
 .doc code {
-    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img, .doc table, .doc table th, .doc table td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+.doc img {
+    border: 1px solid #ccc;
 }
 .doc hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
@@ -1015,6 +850,7 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
+        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -1105,7 +941,6 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
-            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -1126,6 +961,7 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
+        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -1136,12 +972,13 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
+        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =  ' : '');
+        kw.assign = data.assign + (data.assign ? ' =' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1520,9 +1357,8 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
-                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
-                         'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1565,7 +1401,6 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
-        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1581,12 +1416,7 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(status),
-            message: function () {
-                var msg = status.length == 4 ? strings.get(status[3]) : '';
-                this.message = function () { return msg; };
-                return msg;
-            },
+            status: parseStatus(element[8], strings),
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1797,20 +1627,6 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
-const lightModeIcon = `
-<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
-</svg>`
-const darkModeIcon = `
-<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
-</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1846,10 +1662,6 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
-           '<button id=theme-toggle>' +
-             lightModeIcon +
-             darkModeIcon +
-           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1861,7 +1673,6 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
-    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1990,116 +1801,30 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
-const theme = function () {
-    const storageKey = 'theme-preference';
-    const urlParams = new URLSearchParams(window.location.search);
-    var storage;
-    var theme;
-    function init(givenStorage) {
-        storage = givenStorage;
-        theme = { value: getPreference() };
-        document.body.setAttribute('data-theme', theme.value);
-        reflectPreference();
-        window.matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', ({matches:isDark}) => {
-                theme.value = isDark ? 'dark' : 'light';
-                setPreference();
-            });
-        window.addEventListener('storage', ({key, newValue}) => {
-            if (key === storage.fullKey(storageKey)) {
-                theme.value = newValue === 'dark' ? 'dark' : 'light';
-                setPreference();
-            }
-        });
-    }
-    function getPreference() {
-        if (urlParams.has('theme')) {
-            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
-            storage.set(storageKey, urlTheme);
-            urlParams.delete('theme');
-            return urlTheme;
-        }
-        if (storage.get(storageKey))
-            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    function setPreference() {
-        storage.set(storageKey, theme.value);
-        reflectPreference();
-    }
-    function reflectPreference() {
-        document.body.setAttribute('data-theme', theme.value);
-        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
-        const event = new Event('theme-change', {value: theme.value});
-        document.dispatchEvent(event);
-    }
-    function onClick() {
-        theme.value = theme.value === 'light' ? 'dark' : 'light';
-        document.body.setAttribute('theme-toggled', "");
-        setPreference();
-    }
-    return {init: init, getPreference: getPreference, setPreference: setPreference,
-        reflectPreference: reflectPreference, onClick: onClick};
-}();
-</script>
-<script type="text/javascript">
-storage = function () {
-    var prefix = 'robot-framework-';
-    var storage;
-    function init(user) {
-        if (user)
-            prefix += user + '-';
-        storage = getStorage();
-    }
-    function getStorage() {
-        // Use localStorage if it's accessible, normal object otherwise.
-        // Inspired by https://stackoverflow.com/questions/11214404
-        try {
-            localStorage.setItem(prefix, prefix);
-            localStorage.removeItem(prefix);
-            return localStorage;
-        } catch (exception) {
-            return {};
-        }
-    }
-    function get(key, defaultValue) {
-        var value = storage[fullKey(key)];
-        if (typeof value === 'undefined')
-            return defaultValue;
-        return value;
-    }
-    function set(key, value) {
-        storage[fullKey(key)] = value;
-    }
-    function fullKey(key) {
-        return prefix + key;
-    }
-    return {init: init, get: get, set: set, fullKey: fullKey};
-}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,65914],[[4,5,6,7,[],[1,25,23201],[],[[8,0,0,[],[1,1280,10840],[[1,9,10,0,0,0,0,0,[1,1280,8815],[[0,11,12,0,13,14,0,15,[1,1280,970],[[1280,2,16],[2250,2,17]]],[0,18,12,0,19,20,0,15,[1,2250,7845],[[10095,2,21],[10095,2,22]]]]],[0,23,4,0,0,0,0,0,[1,10097,251],[[0,24,12,0,25,26,0,15,[1,10099,249],[[10348,2,27]]]]],[0,28,4,0,0,29,0,0,[1,10348,226],[[0,30,12,0,31,32,0,33,[1,10349,83],[[10349,2,34]]],[0,30,12,0,31,35,0,33,[1,10432,33],[[10434,2,36]]],[0,37,12,0,38,39,0,33,[1,10467,107],[]]]],[0,40,41,0,0,42,0,0,[1,10576,1489],[[0,43,44,0,45,46,47,0,[1,10576,0],[[10576,2,48]]],[0,49,12,0,50,51,0,52,[1,10578,1369],[[11947,2,53]]],[0,54,12,0,55,56,0,57,[1,11947,56],[[12004,2,58]]],[0,59,12,0,60,61,0,62,[1,12004,62],[[12066,2,63]]]]],[2,59,12,0,60,0,0,62,[1,12067,53],[[12119,2,64]]]]],[65,0,0,[66],[1,12195,3244],[[1,9,10,0,0,0,0,0,[1,12200,951],[[0,11,12,0,13,14,0,15,[1,12201,5],[[12202,2,67],[12206,2,68],[12206,2,69]]],[0,18,12,0,19,20,0,15,[1,12206,944],[[13149,2,21],[13149,2,22]]]]],[0,23,4,0,0,0,0,0,[1,13160,235],[[0,24,12,0,25,26,0,15,[1,13160,235],[[13395,2,27]]]]],[0,28,4,0,0,70,0,0,[1,13397,211],[[0,30,12,0,31,32,0,33,[1,13397,68],[[13397,2,34]]],[0,30,12,0,31,35,0,33,[1,13465,30],[[13465,2,71]]],[0,37,12,0,38,39,0,33,[1,13495,113],[]]]],[0,72,73,0,0,74,0,0,[1,13608,1788],[[0,43,44,0,45,75,76,0,[1,13608,0],[[13608,2,77]]],[0,49,12,0,50,78,0,52,[1,13608,1364],[[14972,2,79]]],[0,54,12,0,55,80,0,57,[1,14972,94],[[15066,2,81]]],[0,59,12,0,60,82,0,62,[1,15067,329],[[15396,2,83]]]]],[2,59,12,0,60,0,0,62,[1,15396,43],[[15439,2,84]]]]],[85,0,0,[86],[1,15524,3166],[[1,9,10,0,0,0,0,0,[1,15528,850],[[0,11,12,0,13,14,0,15,[1,15529,3],[[15530,2,67],[15532,2,68],[15532,2,69]]],[0,18,12,0,19,20,0,15,[1,15533,843],[[16376,2,21],[16376,2,22]]]]],[0,23,4,0,0,0,0,0,[1,16387,254],[[0,24,12,0,25,26,0,15,[1,16387,254],[[16641,2,27]]]]],[0,28,4,0,0,87,0,0,[1,16643,203],[[0,30,12,0,31,32,0,33,[1,16643,73],[[16644,2,88]]],[0,30,12,0,31,35,0,33,[1,16716,31],[[16718,2,71]]],[0,37,12,0,38,39,0,33,[1,16747,99],[]]]],[0,72,73,0,0,74,0,0,[1,16850,1782],[[0,43,44,0,45,75,76,0,[1,16850,0],[[16850,2,77]]],[0,49,12,0,50,78,0,52,[1,16852,1380],[[18232,2,79]]],[0,54,12,0,55,80,0,57,[1,18234,58],[[18292,2,81]]],[0,59,12,0,60,82,0,62,[1,18292,339],[[18632,2,89]]]]],[2,59,12,0,60,0,0,62,[1,18632,58],[[18690,2,90]]]]],[91,0,0,[],[1,18748,4424],[[1,9,10,0,0,0,0,0,[1,18751,924],[[0,11,12,0,13,14,0,15,[1,18753,8],[[18754,2,67],[18761,2,68],[18761,2,69]]],[0,18,12,0,19,20,0,15,[1,18762,913],[[19674,2,21],[19674,2,22]]]]],[0,92,0,0,0,93,0,0,[1,19681,914],[[0,23,4,0,0,0,0,0,[1,19683,241],[[0,24,12,0,25,26,0,15,[1,19683,241],[[19924,2,27]]]]],[0,28,4,0,0,94,0,0,[1,19924,196],[[0,30,12,0,31,32,0,33,[1,19926,65],[[19926,2,95]]],[0,30,12,0,31,35,0,33,[1,19991,28],[[19993,2,95]]],[0,37,12,0,38,39,0,33,[1,20019,101],[]]]],[0,96,97,0,0,98,0,0,[1,20120,475],[[0,43,44,0,45,99,47,0,[1,20122,0],[[20122,2,100]]],[0,49,12,0,50,51,0,52,[1,20122,342],[[20464,2,101]]],[0,54,12,0,55,102,0,57,[1,20465,63],[[20527,2,103]]],[0,59,12,0,60,104,0,62,[1,20528,67],[[20595,2,105]]]]]]],[0,92,0,0,0,106,0,0,[1,20596,853],[[0,23,4,0,0,0,0,0,[1,20597,192],[[0,24,12,0,25,26,0,15,[1,20597,192],[[20789,2,27]]]]],[0,28,4,0,0,94,0,0,[1,20789,206],[[0,30,12,0,31,32,0,33,[1,20789,65],[[20791,2,95]]],[0,30,12,0,31,35,0,33,[1,20854,27],[[20854,2,36]]],[0,37,12,0,38,39,0,33,[1,20881,113],[]]]],[0,96,97,0,0,98,0,0,[1,20995,454],[[0,43,44,0,45,99,47,0,[1,20995,1],[[20996,2,100]]],[0,49,12,0,50,51,0,52,[1,20996,332],[[21328,2,101]]],[0,54,12,0,55,102,0,57,[1,21329,48],[[21376,2,103]]],[0,59,12,0,60,104,0,62,[1,21377,73],[[21450,2,107]]]]]]],[0,92,0,0,0,108,0,0,[1,21452,900],[[0,23,4,0,0,0,0,0,[1,21452,206],[[0,24,12,0,25,26,0,15,[1,21452,206],[[21658,2,27]]]]],[0,28,4,0,0,94,0,0,[1,21658,238],[[0,30,12,0,31,32,0,33,[1,21658,97],[[21660,2,34]]],[0,30,12,0,31,35,0,33,[1,21755,34],[[21755,2,95]]],[0,37,12,0,38,39,0,33,[1,21789,105],[]]]],[0,96,97,0,0,98,0,0,[1,21896,456],[[0,43,44,0,45,99,47,0,[1,21896,0],[[21896,2,100]]],[0,49,12,0,50,51,0,52,[1,21897,331],[[22228,2,101]]],[0,54,12,0,55,102,0,57,[1,22230,44],[[22274,2,103]]],[0,59,12,0,60,104,0,62,[1,22274,78],[[22352,2,109]]]]]]],[0,92,0,0,0,110,0,0,[1,22354,768],[[0,23,4,0,0,0,0,0,[1,22354,124],[[0,24,12,0,25,26,0,15,[1,22354,124],[[22477,2,27]]]]],[0,28,4,0,0,94,0,0,[1,22478,203],[[0,30,12,0,31,32,0,33,[1,22478,69],[[22479,2,111]]],[0,30,12,0,31,35,0,33,[1,22547,31],[[22547,2,36]]],[0,37,12,0,38,39,0,33,[1,22578,103],[]]]],[0,96,97,0,0,98,0,0,[1,22681,441],[[0,43,44,0,45,99,47,0,[1,22681,0],[[22681,2,100]]],[0,49,12,0,50,51,0,52,[1,22681,331],[[23012,2,101]]],[0,54,12,0,55,102,0,57,[1,23014,44],[[23058,2,112]]],[0,59,12,0,60,104,0,62,[1,23058,64],[[23122,2,113]]]]]]],[2,59,12,0,60,0,0,62,[1,23123,49],[[23172,2,114]]]]]],[],[4,4,0,0]],[115,116,117,118,[],[1,23248,17361],[],[[119,0,0,[],[1,23279,4720],[[1,9,10,0,0,0,0,0,[1,23282,843],[[0,11,12,0,13,14,0,15,[1,23282,3],[[23283,2,67],[23285,2,68],[23285,2,69]]],[0,18,12,0,19,20,0,15,[1,23285,840],[[24126,2,21],[24126,2,22]]]]],[0,120,10,0,0,121,122,0,[1,24132,2],[[0,123,124,0,125,126,122,0,[1,24132,2],[[24134,2,127]]],[8,0,0,0,0,128,0,0,[1,24134,0],[]],[24134,2,129]]],[0,130,131,0,0,132,0,0,[1,24134,66],[]],[0,133,131,0,0,134,0,0,[1,24202,56],[]],[0,135,10,0,0,0,0,0,[1,24264,1880],[[0,23,4,0,0,0,0,0,[1,24265,262],[[0,24,12,0,25,26,0,15,[1,24265,262],[[24525,2,27]]]]],[0,28,4,0,0,136,0,0,[1,24527,216],[[0,30,12,0,31,32,0,33,[1,24527,75],[[24529,2,34]]],[0,30,12,0,31,35,0,33,[1,24602,31],[[24604,2,36]]],[0,37,12,0,38,39,0,33,[1,24635,109],[]]]],[0,137,138,0,0,139,0,0,[1,24745,1398],[[0,43,44,0,45,46,47,0,[1,24745,0],[[24745,2,48]]],[0,49,12,0,50,51,0,52,[1,24745,1356],[[26101,2,53]]],[0,54,12,0,55,56,0,57,[1,26101,42],[[26143,2,58]]]]]]],[0,140,138,0,0,0,0,0,[1,26144,125],[[0,37,12,0,38,141,0,33,[1,26145,86],[]],[0,49,12,0,50,142,0,52,[1,26231,39],[[26270,2,143]]]]],[0,144,115,0,0,122,0,0,[1,26271,758],[[0,145,115,0,0,0,0,0,[1,26271,153],[[0,37,12,0,38,146,0,33,[1,26271,131],[]],[0,49,12,0,50,147,0,52,[1,26402,22],[[26424,2,148]]]]],[0,149,115,0,0,150,0,0,[1,26426,167],[[0,30,12,0,31,151,0,33,[1,26426,44],[[26426,2,152]]],[0,37,12,0,38,153,0,33,[1,26470,122],[]]]],[0,154,115,0,0,155,0,0,[1,26593,170],[[0,30,12,0,31,156,0,33,[1,26593,45],[[26593,2,157]]],[0,37,12,0,38,158,0,33,[1,26638,124],[]]]],[0,159,115,0,0,160,0,0,[1,26763,164],[[0,30,12,0,31,161,0,33,[1,26763,30],[[26764,2,162]]],[0,30,12,0,31,163,0,33,[1,26792,31],[[26794,2,164]]],[0,30,12,0,31,165,0,33,[1,26824,32],[[26824,2,166]]],[0,30,12,0,31,167,0,33,[1,26856,38],[[26856,2,168]]],[0,30,12,0,31,169,0,33,[1,26894,33],[[26894,2,170]]]]],[0,37,12,0,38,171,0,33,[1,26927,102],[]]]],[0,72,73,0,0,172,0,0,[1,27029,913],[[0,43,44,0,45,75,76,0,[1,27029,2],[[27029,2,77]]],[0,49,12,0,50,78,0,52,[1,27032,215],[[27247,2,79]]],[0,54,12,0,55,80,0,57,[1,27248,21],[[27269,2,173]]],[0,59,12,0,60,82,0,62,[1,27269,674],[[27941,2,174]]]]],[2,59,12,0,60,0,0,62,[1,27943,54],[[27997,2,175]]]]],[176,0,0,[177],[1,28051,4622],[[1,9,10,0,0,0,0,0,[1,28066,903],[[0,11,12,0,13,14,0,15,[1,28066,5],[[28068,2,67],[28071,2,68],[28071,2,69]]],[0,18,12,0,19,20,0,15,[1,28071,899],[[28969,2,21],[28969,2,22]]]]],[0,120,10,0,0,178,122,0,[1,28979,2],[[0,123,124,0,125,126,122,0,[1,28979,2],[[28981,2,127]]],[8,0,0,0,0,128,0,0,[1,28981,0],[]],[28981,2,179]]],[0,180,131,0,0,122,0,0,[1,28981,79],[]],[0,135,10,0,0,0,0,0,[1,29062,1855],[[0,23,4,0,0,0,0,0,[1,29062,243],[[0,24,12,0,25,26,0,15,[1,29064,239],[[29303,2,27]]]]],[0,28,4,0,0,136,0,0,[1,29305,206],[[0,30,12,0,31,32,0,33,[1,29305,64],[[29307,2,34]]],[0,30,12,0,31,35,0,33,[1,29369,30],[[29369,2,36]]],[0,37,12,0,38,39,0,33,[1,29399,112],[]]]],[0,137,138,0,0,139,0,0,[1,29511,1406],[[0,43,44,0,45,46,47,0,[1,29511,0],[[29511,2,48]]],[0,49,12,0,50,51,0,52,[1,29511,1356],[[30867,2,53]]],[0,54,12,0,55,56,0,57,[1,30867,51],[[30918,2,58]]]]]]],[0,140,138,0,0,0,0,0,[1,30918,121],[[0,37,12,0,38,141,0,33,[1,30918,82],[]],[0,49,12,0,50,142,0,52,[1,31000,39],[[31038,2,143]]]]],[0,144,115,0,0,122,0,0,[1,31039,790],[[0,145,115,0,0,0,0,0,[1,31040,163],[[0,37,12,0,38,146,0,33,[1,31040,120],[]],[0,49,12,0,50,147,0,52,[1,31160,42],[[31202,2,148]]]]],[0,149,115,0,0,150,0,0,[1,31202,195],[[0,30,12,0,31,151,0,33,[1,31202,48],[[31204,2,181]]],[0,37,12,0,38,153,0,33,[1,31250,147],[]]]],[0,154,115,0,0,155,0,0,[1,31398,164],[[0,30,12,0,31,156,0,33,[1,31398,38],[[31400,2,182]]],[0,37,12,0,38,158,0,33,[1,31437,125],[]]]],[0,159,115,0,0,160,0,0,[1,31562,163],[[0,30,12,0,31,161,0,33,[1,31562,29],[[31562,2,183]]],[0,30,12,0,31,163,0,33,[1,31593,29],[[31593,2,181]]],[0,30,12,0,31,165,0,33,[1,31624,28],[[31624,2,184]]],[0,30,12,0,31,167,0,33,[1,31652,41],[[31654,2,185]]],[0,30,12,0,31,169,0,33,[1,31693,32],[[31695,2,170]]]]],[0,37,12,0,38,171,0,33,[1,31725,104],[]]]],[0,72,73,0,0,186,0,0,[1,31829,784],[[0,43,44,0,45,75,76,0,[1,31829,2],[[31831,2,77]]],[0,49,12,0,50,78,0,52,[1,31831,18],[[31848,2,79]]],[0,54,12,0,55,80,0,57,[1,31849,22],[[31871,2,187]]],[0,59,12,0,60,82,0,62,[1,31871,742],[[32613,2,188]]]]],[2,59,12,0,60,0,0,62,[1,32613,60],[[32673,2,189]]]]],[190,0,0,[191],[1,32730,4220],[[1,9,10,0,0,0,0,0,[1,32733,1155],[[0,11,12,0,13,14,0,15,[1,32733,6],[[32734,2,67],[32738,2,68],[32738,2,69]]],[0,18,12,0,19,20,0,15,[1,32740,1148],[[33886,2,21],[33887,2,22]]]]],[0,120,10,0,0,192,122,0,[1,33895,2],[[0,123,124,0,125,126,122,0,[1,33895,0],[[33895,2,127]]],[8,0,0,0,0,128,0,0,[1,33895,0],[]],[33897,2,193]]],[0,180,131,0,0,122,0,0,[1,33897,56],[]],[0,135,10,0,0,0,0,0,[1,33955,1929],[[0,23,4,0,0,0,0,0,[1,33957,299],[[0,24,12,0,25,26,0,15,[1,33957,299],[[34256,2,27]]]]],[0,28,4,0,0,136,0,0,[1,34256,206],[[0,30,12,0,31,32,0,33,[1,34258,64],[[34258,2,34]]],[0,30,12,0,31,35,0,33,[1,34324,27],[[34325,2,36]]],[0,37,12,0,38,39,0,33,[1,34351,111],[]]]],[0,137,138,0,0,139,0,0,[1,34463,1421],[[0,43,44,0,45,46,47,0,[1,34463,0],[[34463,2,48]]],[0,49,12,0,50,51,0,52,[1,34463,1381],[[35842,2,53]]],[0,54,12,0,55,56,0,57,[1,35843,41],[[35884,2,58]]]]]]],[0,140,138,0,0,0,0,0,[1,35884,126],[[0,37,12,0,38,141,0,33,[1,35884,85],[]],[0,49,12,0,50,142,0,52,[1,35970,41],[[36009,2,143]]]]],[0,194,115,0,0,195,0,0,[1,36010,892],[[0,30,12,0,31,196,0,33,[1,36011,29],[[36011,2,197]]],[0,49,12,0,50,198,0,52,[1,36041,861],[[36902,2,199]]]]],[0,200,115,0,0,195,0,0,[1,36903,10],[[0,49,12,0,50,201,0,52,[1,36903,9],[[36912,2,202]]]]],[2,59,12,0,60,0,0,62,[1,36913,35],[[36948,2,203]]]]],[204,0,0,[205],[1,36999,3541],[[1,9,10,0,0,0,0,0,[1,37005,885],[[0,11,12,0,13,14,0,15,[1,37006,3],[[37006,2,67],[37009,2,68],[37009,2,69]]],[0,18,12,0,19,20,0,15,[1,37009,881],[[37888,2,21],[37888,2,22]]]]],[0,120,10,0,0,206,122,0,[1,37899,2],[[0,123,124,0,125,126,122,0,[1,37899,0],[[37899,2,127]]],[8,0,0,0,0,128,0,0,[1,37899,0],[]],[37901,2,207]]],[0,180,131,0,0,122,0,0,[1,37901,115],[]],[0,135,10,0,0,0,0,0,[1,38017,1862],[[0,23,4,0,0,0,0,0,[1,38018,241],[[0,24,12,0,25,26,0,15,[1,38018,241],[[38259,2,27]]]]],[0,28,4,0,0,136,0,0,[1,38259,221],[[0,30,12,0,31,32,0,33,[1,38261,72],[[38261,2,34]]],[0,30,12,0,31,35,0,33,[1,38333,32],[[38335,2,36]]],[0,37,12,0,38,39,0,33,[1,38365,115],[]]]],[0,137,138,0,0,139,0,0,[1,38480,1398],[[0,43,44,0,45,46,47,0,[1,38481,0],[[38481,2,48]]],[0,49,12,0,50,51,0,52,[1,38481,1358],[[39839,2,53]]],[0,54,12,0,55,56,0,57,[1,39839,40],[[39879,2,58]]]]]]],[0,140,138,0,0,0,0,0,[1,39879,130],[[0,37,12,0,38,141,0,33,[1,39879,86],[]],[0,49,12,0,50,142,0,52,[1,39966,43],[[40009,2,143]]]]],[0,208,115,0,0,195,0,0,[1,40010,79],[[0,37,12,0,38,209,0,33,[1,40011,78],[]]]],[0,210,211,0,0,0,0,0,[1,40089,384],[[0,37,12,0,38,212,0,33,[1,40089,384],[]]]],[0,213,115,0,0,195,0,0,[1,40474,12],[[0,49,12,0,50,214,0,52,[1,40475,11],[[40486,2,215]]]]],[2,59,12,0,60,0,0,62,[1,40486,54],[[40540,2,216]]]]]],[],[4,4,0,0]],[217,218,219,220,[],[1,40633,8454],[],[[221,0,0,[222],[1,40661,3882],[[1,9,10,0,0,0,0,0,[1,40667,855],[[0,11,12,0,13,14,0,15,[1,40668,3],[[40668,2,67],[40671,2,68],[40671,2,69]]],[0,18,12,0,19,20,0,15,[1,40671,851],[[41522,2,21],[41522,2,22]]]]],[0,223,44,0,224,225,226,0,[1,41525,0],[[41525,2,227]]],[0,130,131,0,0,228,0,0,[1,41525,61],[]],[0,229,230,0,0,226,0,0,[1,41589,427],[[0,54,12,0,55,231,0,57,[1,41589,74],[[41663,2,232]]],[0,30,12,0,31,233,0,33,[1,41663,34],[[41663,2,234]]],[0,30,12,0,31,235,0,33,[1,41697,31],[[41697,2,236]]],[0,30,12,0,31,237,0,33,[1,41729,34],[[41729,2,238]]],[0,37,12,0,38,239,0,33,[1,41762,253],[]]]],[0,240,241,0,0,0,0,0,[1,42016,2456],[[0,49,12,0,50,242,0,52,[1,42017,2455],[[44470,2,243]]]]],[2,59,12,0,60,0,0,62,[1,44471,72],[[44543,2,244]]]]],[245,0,0,[],[1,44644,4389],[[1,9,10,0,0,0,0,0,[1,44648,918],[[0,11,12,0,13,14,0,15,[1,44648,4],[[44648,2,67],[44652,2,68],[44652,2,69]]],[0,18,12,0,19,20,0,15,[1,44652,914],[[45565,2,21],[45566,2,22]]]]],[0,246,0,0,0,247,0,0,[1,45573,735],[[0,223,44,0,224,248,226,0,[1,45574,0],[[45574,2,249]]],[0,229,230,0,0,226,0,0,[1,45575,294],[[0,54,12,0,55,231,0,57,[1,45575,83],[[45658,2,232]]],[0,30,12,0,31,233,0,33,[1,45658,36],[[45662,2,95]]],[0,30,12,0,31,235,0,33,[1,45694,33],[[45698,2,250]]],[0,30,12,0,31,237,0,33,[1,45727,32],[[45727,2,251]]],[0,37,12,0,38,239,0,33,[1,45759,110],[]]]],[0,96,97,0,0,98,0,0,[1,45870,438],[[0,43,44,0,45,99,47,0,[1,45870,0],[[45870,2,100]]],[0,49,12,0,50,51,0,52,[1,45870,338],[[46208,2,101]]],[0,54,12,0,55,102,0,57,[1,46208,26],[[46233,2,252]]],[0,59,12,0,60,104,0,62,[1,46234,74],[[46308,2,253]]]]]]],[0,246,0,0,0,254,0,0,[1,46308,695],[[0,223,44,0,224,248,226,0,[1,46308,0],[[46308,2,255]]],[0,229,230,0,0,226,0,0,[1,46308,224],[[0,54,12,0,55,231,0,57,[1,46308,35],[[46343,2,232]]],[0,30,12,0,31,233,0,33,[1,46343,32],[[46344,2,256]]],[0,30,12,0,31,235,0,33,[1,46375,37],[[46376,2,95]]],[0,30,12,0,31,237,0,33,[1,46413,31],[[46413,2,257]]],[0,37,12,0,38,239,0,33,[1,46444,88],[]]]],[0,96,97,0,0,98,0,0,[1,46532,471],[[0,43,44,0,45,99,47,0,[1,46533,0],[[46533,2,100]]],[0,49,12,0,50,51,0,52,[1,46534,392],[[46926,2,101]]],[0,54,12,0,55,102,0,57,[1,46926,24],[[46949,2,258]]],[0,59,12,0,60,104,0,62,[1,46950,53],[[47002,2,259]]]]]]],[0,246,0,0,0,260,0,0,[1,47003,670],[[0,223,44,0,224,248,226,0,[1,47004,1],[[47005,2,261]]],[0,229,230,0,0,226,0,0,[1,47005,193],[[0,54,12,0,55,231,0,57,[1,47005,20],[[47026,2,232]]],[0,30,12,0,31,233,0,33,[1,47026,21],[[47026,2,262]]],[0,30,12,0,31,235,0,33,[1,47047,32],[[47048,2,263]]],[0,30,12,0,31,237,0,33,[1,47079,36],[[47080,2,95]]],[0,37,12,0,38,239,0,33,[1,47115,83],[]]]],[0,96,97,0,0,98,0,0,[1,47198,475],[[0,43,44,0,45,99,47,0,[1,47198,0],[[47198,2,100]]],[0,49,12,0,50,51,0,52,[1,47202,360],[[47558,2,101]]],[0,54,12,0,55,102,0,57,[1,47562,40],[[47602,2,264]]],[0,59,12,0,60,104,0,62,[1,47602,70],[[47672,2,265]]]]]]],[0,246,0,0,0,266,0,0,[1,47673,672],[[0,223,44,0,224,248,226,0,[1,47674,0],[[47674,2,267]]],[0,229,230,0,0,226,0,0,[1,47675,209],[[0,54,12,0,55,231,0,57,[1,47675,22],[[47697,2,232]]],[0,30,12,0,31,233,0,33,[1,47697,29],[[47697,2,234]]],[0,30,12,0,31,235,0,33,[1,47726,27],[[47726,2,268]]],[0,30,12,0,31,237,0,33,[1,47753,27],[[47754,2,269]]],[0,37,12,0,38,239,0,33,[1,47780,102],[]]]],[0,96,97,0,0,98,0,0,[1,47884,461],[[0,43,44,0,45,99,47,0,[1,47884,0],[[47884,2,100]]],[0,49,12,0,50,51,0,52,[1,47884,355],[[48240,2,101]]],[0,54,12,0,55,102,0,57,[1,48241,38],[[48279,2,112]]],[0,59,12,0,60,104,0,62,[1,48279,65],[[48344,2,270]]]]]]],[0,246,0,0,0,271,0,0,[1,48345,646],[[0,223,44,0,224,248,226,0,[1,48346,0],[[48346,2,272]]],[0,229,230,0,0,226,0,0,[1,48346,203],[[0,54,12,0,55,231,0,57,[1,48347,21],[[48368,2,232]]],[0,30,12,0,31,233,0,33,[1,48368,27],[[48368,2,273]]],[0,30,12,0,31,235,0,33,[1,48395,26],[[48395,2,274]]],[0,30,12,0,31,237,0,33,[1,48421,30],[[48422,2,275]]],[0,37,12,0,38,239,0,33,[1,48450,98],[]]]],[0,96,97,0,0,98,0,0,[1,48549,442],[[0,43,44,0,45,99,47,0,[1,48553,0],[[48553,2,100]]],[0,49,12,0,50,51,0,52,[1,48553,350],[[48903,2,101]]],[0,54,12,0,55,102,0,57,[1,48903,33],[[48936,2,276]]],[0,59,12,0,60,104,0,62,[1,48936,55],[[48990,2,277]]]]]]],[2,59,12,0,60,0,0,62,[1,48992,41],[[49033,2,278]]]]]],[],[2,2,0,0]],[279,280,281,282,[],[1,49115,16795],[],[[283,0,0,[],[1,49121,16006],[[0,11,12,0,13,284,0,15,[1,49128,6844],[[49129,2,285],[55970,2,286]]],[0,18,12,0,19,20,0,15,[1,55973,6858],[[62830,2,21],[62831,2,22]]],[0,54,12,0,55,287,0,57,[1,62832,295],[[63126,2,288]]],[0,289,44,0,290,291,0,0,[1,63126,2001],[[65127,2,292]]]]]],[],[1,1,0,0]]],[],[],[11,11,0,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,48745],[[4,5,6,7,[],[1,22,21643],[],[[8,0,0,[],[1,1367,10184],[[1,9,10,0,0,0,0,0,[1,1370,8240],[[0,11,12,0,13,14,0,15,[1,1371,930],[[1371,2,16],[2301,2,17]]],[0,18,12,0,19,20,0,15,[1,2301,7308],[[9609,2,21],[9609,2,22]]]]],[0,23,4,0,0,0,0,0,[1,9611,211],[[0,24,12,0,25,26,0,15,[1,9611,211],[[9822,2,27]]]]],[0,28,4,0,0,29,0,0,[1,9823,183],[[0,30,12,0,31,32,0,33,[1,9823,70],[[9823,2,34]]],[0,30,12,0,31,35,0,33,[1,9893,25],[[9893,2,36]]],[0,37,12,0,38,39,0,33,[1,9918,88],[]]]],[0,40,41,0,0,42,0,0,[1,10007,1498],[[0,43,44,0,45,46,47,0,[1,10007,0],[[10007,2,48]]],[0,49,12,0,50,51,0,52,[1,10007,1380],[[11387,2,53]]],[0,54,12,0,55,56,0,57,[1,11388,47],[[11435,2,58]]],[0,59,12,0,60,61,0,62,[1,11436,69],[[11505,2,63]]]]],[2,59,12,0,60,0,0,62,[1,11506,44],[[11550,2,64]]]]],[65,0,0,[66],[1,11608,2976],[[1,9,10,0,0,0,0,0,[1,11611,713],[[0,11,12,0,13,14,0,15,[1,11612,2],[[11612,2,67],[11614,2,68],[11614,2,69]]],[0,18,12,0,19,20,0,15,[1,11614,710],[[12324,2,21],[12324,2,22]]]]],[0,23,4,0,0,0,0,0,[1,12336,216],[[0,24,12,0,25,26,0,15,[1,12336,216],[[12552,2,27]]]]],[0,28,4,0,0,70,0,0,[1,12553,161],[[0,30,12,0,31,32,0,33,[1,12553,62],[[12554,2,34]]],[0,30,12,0,31,35,0,33,[1,12615,22],[[12616,2,71]]],[0,37,12,0,38,39,0,33,[1,12637,77],[]]]],[0,72,73,0,0,74,0,0,[1,12714,1830],[[0,43,44,0,45,75,76,0,[1,12715,0],[[12715,2,77]]],[0,49,12,0,50,78,0,52,[1,12716,1383],[[14098,2,79]]],[0,54,12,0,55,80,0,57,[1,14099,64],[[14163,2,81]]],[0,59,12,0,60,82,0,62,[1,14163,381],[[14543,2,83]]]]],[2,59,12,0,60,0,0,62,[1,14544,39],[[14583,2,84]]]]],[85,0,0,[86],[1,14629,2965],[[1,9,10,0,0,0,0,0,[1,14632,729],[[0,11,12,0,13,14,0,15,[1,14633,2],[[14633,2,67],[14635,2,68],[14635,2,69]]],[0,18,12,0,19,20,0,15,[1,14635,726],[[15361,2,21],[15361,2,22]]]]],[0,23,4,0,0,0,0,0,[1,15364,216],[[0,24,12,0,25,26,0,15,[1,15365,215],[[15580,2,27]]]]],[0,28,4,0,0,87,0,0,[1,15581,180],[[0,30,12,0,31,32,0,33,[1,15581,69],[[15581,2,88]]],[0,30,12,0,31,35,0,33,[1,15651,25],[[15651,2,71]]],[0,37,12,0,38,39,0,33,[1,15677,84],[]]]],[0,72,73,0,0,74,0,0,[1,15762,1787],[[0,43,44,0,45,75,76,0,[1,15763,0],[[15763,2,77]]],[0,49,12,0,50,78,0,52,[1,15763,1353],[[17116,2,79]]],[0,54,12,0,55,80,0,57,[1,17116,48],[[17164,2,81]]],[0,59,12,0,60,82,0,62,[1,17164,385],[[17549,2,89]]]]],[2,59,12,0,60,0,0,62,[1,17550,44],[[17594,2,90]]]]],[91,0,0,[],[1,17641,3981],[[1,9,10,0,0,0,0,0,[1,17644,695],[[0,11,12,0,13,14,0,15,[1,17644,3],[[17645,2,67],[17647,2,68],[17647,2,69]]],[0,18,12,0,19,20,0,15,[1,17647,692],[[18338,2,21],[18338,2,22]]]]],[0,92,0,0,0,93,0,0,[1,18341,857],[[0,23,4,0,0,0,0,0,[1,18342,233],[[0,24,12,0,25,26,0,15,[1,18343,232],[[18574,2,27]]]]],[0,28,4,0,0,94,0,0,[1,18575,153],[[0,30,12,0,31,32,0,33,[1,18575,66],[[18576,2,95]]],[0,30,12,0,31,35,0,33,[1,18641,23],[[18641,2,95]]],[0,37,12,0,38,39,0,33,[1,18664,64],[]]]],[0,96,97,0,0,98,0,0,[1,18728,470],[[0,43,44,0,45,99,47,0,[1,18729,0],[[18729,2,100]]],[0,49,12,0,50,51,0,52,[1,18729,347],[[19076,2,101]]],[0,54,12,0,55,102,0,57,[1,19076,50],[[19126,2,103]]],[0,59,12,0,60,104,0,62,[1,19126,71],[[19197,2,105]]]]]]],[0,92,0,0,0,106,0,0,[1,19199,869],[[0,23,4,0,0,0,0,0,[1,19200,191],[[0,24,12,0,25,26,0,15,[1,19200,190],[[19390,2,27]]]]],[0,28,4,0,0,94,0,0,[1,19391,166],[[0,30,12,0,31,32,0,33,[1,19392,60],[[19392,2,95]]],[0,30,12,0,31,35,0,33,[1,19452,22],[[19452,2,36]]],[0,37,12,0,38,39,0,33,[1,19474,82],[]]]],[0,96,97,0,0,98,0,0,[1,19557,509],[[0,43,44,0,45,99,47,0,[1,19557,1],[[19558,2,100]]],[0,49,12,0,50,51,0,52,[1,19558,390],[[19948,2,101]]],[0,54,12,0,55,102,0,57,[1,19948,51],[[19999,2,103]]],[0,59,12,0,60,104,0,62,[1,20000,66],[[20066,2,107]]]]]]],[0,92,0,0,0,108,0,0,[1,20068,786],[[0,23,4,0,0,0,0,0,[1,20069,182],[[0,24,12,0,25,26,0,15,[1,20069,181],[[20250,2,27]]]]],[0,28,4,0,0,94,0,0,[1,20251,152],[[0,30,12,0,31,32,0,33,[1,20251,58],[[20251,2,34]]],[0,30,12,0,31,35,0,33,[1,20309,26],[[20309,2,95]]],[0,37,12,0,38,39,0,33,[1,20335,68],[]]]],[0,96,97,0,0,98,0,0,[1,20403,451],[[0,43,44,0,45,99,47,0,[1,20404,0],[[20404,2,100]]],[0,49,12,0,50,51,0,52,[1,20404,343],[[20747,2,101]]],[0,54,12,0,55,102,0,57,[1,20748,41],[[20789,2,103]]],[0,59,12,0,60,104,0,62,[1,20789,65],[[20854,2,109]]]]]]],[0,92,0,0,0,110,0,0,[1,20855,732],[[0,23,4,0,0,0,0,0,[1,20855,125],[[0,24,12,0,25,26,0,15,[1,20855,125],[[20980,2,27]]]]],[0,28,4,0,0,94,0,0,[1,20980,157],[[0,30,12,0,31,32,0,33,[1,20980,62],[[20981,2,111]]],[0,30,12,0,31,35,0,33,[1,21043,20],[[21043,2,36]]],[0,37,12,0,38,39,0,33,[1,21063,73],[]]]],[0,96,97,0,0,98,0,0,[1,21137,450],[[0,43,44,0,45,99,47,0,[1,21137,1],[[21138,2,100]]],[0,49,12,0,50,51,0,52,[1,21138,340],[[21477,2,101]]],[0,54,12,0,55,102,0,57,[1,21478,40],[[21518,2,112]]],[0,59,12,0,60,104,0,62,[1,21519,68],[[21586,2,113]]]]]]],[2,59,12,0,60,0,0,62,[1,21587,35],[[21621,2,114]]]]]],[],[4,4,0,0]],[115,116,117,118,[],[1,21671,15593],[],[[119,0,0,[],[1,21696,4257],[[1,9,10,0,0,0,0,0,[1,21698,711],[[0,11,12,0,13,14,0,15,[1,21699,2],[[21699,2,67],[21700,2,68],[21701,2,69]]],[0,18,12,0,19,20,0,15,[1,21701,708],[[22409,2,21],[22409,2,22]]]]],[0,120,10,0,0,121,122,0,[1,22414,2],[[0,123,124,0,125,126,122,0,[1,22415,1],[[22416,2,127]]],[22416,2,128]]],[0,129,130,0,0,131,0,0,[1,22417,86],[]],[0,132,130,0,0,133,0,0,[1,22506,50],[]],[0,134,10,0,0,0,0,0,[1,22557,1814],[[0,23,4,0,0,0,0,0,[1,22558,199],[[0,24,12,0,25,26,0,15,[1,22558,199],[[22756,2,27]]]]],[0,28,4,0,0,135,0,0,[1,22757,158],[[0,30,12,0,31,32,0,33,[1,22758,54],[[22758,2,34]]],[0,30,12,0,31,35,0,33,[1,22813,22],[[22813,2,36]]],[0,37,12,0,38,39,0,33,[1,22836,79],[]]]],[0,136,137,0,0,138,0,0,[1,22915,1456],[[0,43,44,0,45,46,47,0,[1,22915,1],[[22916,2,48]]],[0,49,12,0,50,51,0,52,[1,22916,1401],[[24316,2,53]]],[0,54,12,0,55,56,0,57,[1,24317,53],[[24370,2,58]]]]]]],[0,139,137,0,0,0,0,0,[1,24371,74],[[0,37,12,0,38,140,0,33,[1,24371,63],[]],[0,49,12,0,50,141,0,52,[1,24435,10],[[24445,2,142]]]]],[0,143,115,0,0,122,0,0,[1,24446,566],[[0,144,115,0,0,0,0,0,[1,24447,147],[[0,37,12,0,38,145,0,33,[1,24447,118],[]],[0,49,12,0,50,146,0,52,[1,24565,29],[[24594,2,147]]]]],[0,148,115,0,0,149,0,0,[1,24594,120],[[0,30,12,0,31,150,0,33,[1,24595,37],[[24595,2,151]]],[0,37,12,0,38,152,0,33,[1,24632,82],[]]]],[0,153,115,0,0,154,0,0,[1,24715,100],[[0,30,12,0,31,155,0,33,[1,24715,35],[[24715,2,156]]],[0,37,12,0,38,157,0,33,[1,24750,64],[]]]],[0,158,115,0,0,159,0,0,[1,24815,113],[[0,30,12,0,31,160,0,33,[1,24815,24],[[24815,2,161]]],[0,30,12,0,31,162,0,33,[1,24840,21],[[24840,2,163]]],[0,30,12,0,31,164,0,33,[1,24861,22],[[24862,2,165]]],[0,30,12,0,31,166,0,33,[1,24883,22],[[24884,2,167]]],[0,30,12,0,31,168,0,33,[1,24905,23],[[24906,2,169]]]]],[0,37,12,0,38,170,0,33,[1,24928,83],[]]]],[0,72,73,0,0,171,0,0,[1,25012,895],[[0,43,44,0,45,75,76,0,[1,25013,0],[[25013,2,77]]],[0,49,12,0,50,78,0,52,[1,25013,210],[[25223,2,79]]],[0,54,12,0,55,80,0,57,[1,25223,20],[[25243,2,172]]],[0,59,12,0,60,82,0,62,[1,25243,664],[[25907,2,173]]]]],[2,59,12,0,60,0,0,62,[1,25908,45],[[25953,2,174]]]]],[175,0,0,[176],[1,25998,4054],[[1,9,10,0,0,0,0,0,[1,26001,684],[[0,11,12,0,13,14,0,15,[1,26001,3],[[26001,2,67],[26003,2,68],[26003,2,69]]],[0,18,12,0,19,20,0,15,[1,26004,681],[[26685,2,21],[26685,2,22]]]]],[0,120,10,0,0,177,122,0,[1,26686,2],[[0,123,124,0,125,126,122,0,[1,26687,1],[[26688,2,127]]],[26688,2,178]]],[0,179,130,0,0,122,0,0,[1,26693,46],[]],[0,134,10,0,0,0,0,0,[1,26741,1830],[[0,23,4,0,0,0,0,0,[1,26742,198],[[0,24,12,0,25,26,0,15,[1,26742,198],[[26940,2,27]]]]],[0,28,4,0,0,135,0,0,[1,26940,158],[[0,30,12,0,31,32,0,33,[1,26941,62],[[26941,2,34]]],[0,30,12,0,31,35,0,33,[1,27003,21],[[27003,2,36]]],[0,37,12,0,38,39,0,33,[1,27024,73],[]]]],[0,136,137,0,0,138,0,0,[1,27098,1473],[[0,43,44,0,45,46,47,0,[1,27099,0],[[27099,2,48]]],[0,49,12,0,50,51,0,52,[1,27099,1397],[[28495,2,53]]],[0,54,12,0,55,56,0,57,[1,28496,75],[[28571,2,58]]]]]]],[0,139,137,0,0,0,0,0,[1,28572,73],[[0,37,12,0,38,140,0,33,[1,28572,61],[]],[0,49,12,0,50,141,0,52,[1,28633,12],[[28645,2,142]]]]],[0,143,115,0,0,122,0,0,[1,28645,608],[[0,144,115,0,0,0,0,0,[1,28646,184],[[0,37,12,0,38,145,0,33,[1,28646,144],[]],[0,49,12,0,50,146,0,52,[1,28790,40],[[28830,2,147]]]]],[0,148,115,0,0,149,0,0,[1,28831,133],[[0,30,12,0,31,150,0,33,[1,28831,37],[[28831,2,180]]],[0,37,12,0,38,152,0,33,[1,28868,96],[]]]],[0,153,115,0,0,154,0,0,[1,28964,99],[[0,30,12,0,31,155,0,33,[1,28964,31],[[28965,2,181]]],[0,37,12,0,38,157,0,33,[1,28995,68],[]]]],[0,158,115,0,0,159,0,0,[1,29063,113],[[0,30,12,0,31,160,0,33,[1,29063,24],[[29064,2,182]]],[0,30,12,0,31,162,0,33,[1,29088,22],[[29088,2,180]]],[0,30,12,0,31,164,0,33,[1,29110,21],[[29110,2,183]]],[0,30,12,0,31,166,0,33,[1,29132,20],[[29132,2,184]]],[0,30,12,0,31,168,0,33,[1,29153,22],[[29153,2,169]]]]],[0,37,12,0,38,170,0,33,[1,29176,77],[]]]],[0,72,73,0,0,185,0,0,[1,29254,750],[[0,43,44,0,45,75,76,0,[1,29255,0],[[29255,2,77]]],[0,49,12,0,50,78,0,52,[1,29255,20],[[29274,2,79]]],[0,54,12,0,55,80,0,57,[1,29275,21],[[29296,2,186]]],[0,59,12,0,60,82,0,62,[1,29296,708],[[30004,2,187]]]]],[2,59,12,0,60,0,0,62,[1,30005,47],[[30052,2,188]]]]],[189,0,0,[190],[1,30097,3905],[[1,9,10,0,0,0,0,0,[1,30099,923],[[0,11,12,0,13,14,0,15,[1,30099,3],[[30100,2,67],[30102,2,68],[30102,2,69]]],[0,18,12,0,19,20,0,15,[1,30102,920],[[31022,2,21],[31022,2,22]]]]],[0,120,10,0,0,191,122,0,[1,31041,1],[[0,123,124,0,125,126,122,0,[1,31041,1],[[31042,2,127]]],[31042,2,192]]],[0,179,130,0,0,122,0,0,[1,31065,84],[]],[0,134,10,0,0,0,0,0,[1,31150,1790],[[0,23,4,0,0,0,0,0,[1,31150,211],[[0,24,12,0,25,26,0,15,[1,31151,210],[[31361,2,27]]]]],[0,28,4,0,0,135,0,0,[1,31362,172],[[0,30,12,0,31,32,0,33,[1,31362,57],[[31362,2,34]]],[0,30,12,0,31,35,0,33,[1,31419,27],[[31420,2,36]]],[0,37,12,0,38,39,0,33,[1,31446,88],[]]]],[0,136,137,0,0,138,0,0,[1,31534,1406],[[0,43,44,0,45,46,47,0,[1,31534,0],[[31534,2,48]]],[0,49,12,0,50,51,0,52,[1,31535,1355],[[32889,2,53]]],[0,54,12,0,55,56,0,57,[1,32890,50],[[32940,2,58]]]]]]],[0,139,137,0,0,0,0,0,[1,32940,70],[[0,37,12,0,38,140,0,33,[1,32941,58],[]],[0,49,12,0,50,141,0,52,[1,32999,11],[[33010,2,142]]]]],[0,193,115,0,0,194,0,0,[1,33015,904],[[0,30,12,0,31,195,0,33,[1,33016,44],[[33016,2,196]]],[0,49,12,0,50,197,0,52,[1,33061,858],[[33918,2,198]]]]],[0,199,115,0,0,194,0,0,[1,33921,20],[[0,49,12,0,50,200,0,52,[1,33922,19],[[33941,2,201]]]]],[2,59,12,0,60,0,0,62,[1,33942,59],[[34001,2,202]]]]],[203,0,0,[204],[1,34046,3157],[[1,9,10,0,0,0,0,0,[1,34048,688],[[0,11,12,0,13,14,0,15,[1,34049,2],[[34049,2,67],[34051,2,68],[34051,2,69]]],[0,18,12,0,19,20,0,15,[1,34052,684],[[34735,2,21],[34735,2,22]]]]],[0,120,10,0,0,205,122,0,[1,34739,1],[[0,123,124,0,125,126,122,0,[1,34739,1],[[34740,2,127]]],[34740,2,206]]],[0,179,130,0,0,122,0,0,[1,34741,56],[]],[0,134,10,0,0,0,0,0,[1,34799,1812],[[0,23,4,0,0,0,0,0,[1,34800,199],[[0,24,12,0,25,26,0,15,[1,34800,199],[[34999,2,27]]]]],[0,28,4,0,0,135,0,0,[1,34999,159],[[0,30,12,0,31,32,0,33,[1,35000,65],[[35000,2,34]]],[0,30,12,0,31,35,0,33,[1,35065,21],[[35065,2,36]]],[0,37,12,0,38,39,0,33,[1,35086,72],[]]]],[0,136,137,0,0,138,0,0,[1,35158,1453],[[0,43,44,0,45,46,47,0,[1,35159,0],[[35159,2,48]]],[0,49,12,0,50,51,0,52,[1,35159,1411],[[36569,2,53]]],[0,54,12,0,55,56,0,57,[1,36570,41],[[36611,2,58]]]]]]],[0,139,137,0,0,0,0,0,[1,36611,110],[[0,37,12,0,38,140,0,33,[1,36612,67],[]],[0,49,12,0,50,141,0,52,[1,36679,42],[[36721,2,142]]]]],[0,207,115,0,0,194,0,0,[1,36722,69],[[0,37,12,0,38,208,0,33,[1,36722,68],[]]]],[0,209,210,0,0,0,0,0,[1,36791,349],[[0,37,12,0,38,211,0,33,[1,36791,349],[]]]],[0,212,115,0,0,194,0,0,[1,37141,11],[[0,49,12,0,50,213,0,52,[1,37142,10],[[37152,2,214]]]]],[2,59,12,0,60,0,0,62,[1,37153,49],[[37202,2,215]]]]]],[],[4,4,0,0]],[216,217,218,219,[],[1,37270,7413],[],[[220,0,0,[221],[1,37293,3570],[[1,9,10,0,0,0,0,0,[1,37296,683],[[0,11,12,0,13,14,0,15,[1,37296,2],[[37296,2,67],[37298,2,68],[37298,2,69]]],[0,18,12,0,19,20,0,15,[1,37298,681],[[37978,2,21],[37978,2,22]]]]],[0,222,44,0,223,224,225,0,[1,37980,1],[[37981,2,226]]],[0,129,130,0,0,227,0,0,[1,37988,57],[]],[0,228,229,0,0,225,0,0,[1,38048,237],[[0,54,12,0,55,230,0,57,[1,38048,73],[[38121,2,231]]],[0,30,12,0,31,232,0,33,[1,38122,25],[[38122,2,233]]],[0,30,12,0,31,234,0,33,[1,38148,22],[[38148,2,235]]],[0,30,12,0,31,236,0,33,[1,38170,25],[[38170,2,237]]],[0,37,12,0,38,238,0,33,[1,38196,89],[]]]],[0,239,240,0,0,0,0,0,[1,38285,2457],[[0,49,12,0,50,241,0,52,[1,38286,2456],[[40742,2,242]]]]],[2,59,12,0,60,0,0,62,[1,40743,120],[[40863,2,243]]]]],[244,0,0,[],[1,40908,3732],[[1,9,10,0,0,0,0,0,[1,40912,770],[[0,11,12,0,13,14,0,15,[1,40912,2],[[40912,2,67],[40914,2,68],[40914,2,69]]],[0,18,12,0,19,20,0,15,[1,40914,768],[[41682,2,21],[41682,2,22]]]]],[0,245,0,0,0,246,0,0,[1,41685,658],[[0,222,44,0,223,247,225,0,[1,41686,1],[[41687,2,248]]],[0,228,229,0,0,225,0,0,[1,41687,232],[[0,54,12,0,55,230,0,57,[1,41687,76],[[41763,2,231]]],[0,30,12,0,31,232,0,33,[1,41764,26],[[41764,2,95]]],[0,30,12,0,31,234,0,33,[1,41790,22],[[41791,2,249]]],[0,30,12,0,31,236,0,33,[1,41813,24],[[41813,2,250]]],[0,37,12,0,38,238,0,33,[1,41837,82],[]]]],[0,96,97,0,0,98,0,0,[1,41920,423],[[0,43,44,0,45,99,47,0,[1,41920,0],[[41920,2,100]]],[0,49,12,0,50,51,0,52,[1,41920,337],[[42257,2,101]]],[0,54,12,0,55,102,0,57,[1,42257,22],[[42279,2,251]]],[0,59,12,0,60,104,0,62,[1,42280,62],[[42342,2,252]]]]]]],[0,245,0,0,0,253,0,0,[1,42343,568],[[0,222,44,0,223,247,225,0,[1,42344,1],[[42344,2,254]]],[0,228,229,0,0,225,0,0,[1,42345,146],[[0,54,12,0,55,230,0,57,[1,42346,21],[[42367,2,231]]],[0,30,12,0,31,232,0,33,[1,42368,19],[[42368,2,255]]],[0,30,12,0,31,234,0,33,[1,42387,21],[[42388,2,95]]],[0,30,12,0,31,236,0,33,[1,42408,18],[[42408,2,256]]],[0,37,12,0,38,238,0,33,[1,42426,65],[]]]],[0,96,97,0,0,98,0,0,[1,42491,420],[[0,43,44,0,45,99,47,0,[1,42492,0],[[42492,2,100]]],[0,49,12,0,50,51,0,52,[1,42492,335],[[42827,2,101]]],[0,54,12,0,55,102,0,57,[1,42828,20],[[42848,2,257]]],[0,59,12,0,60,104,0,62,[1,42849,62],[[42911,2,258]]]]]]],[0,245,0,0,0,259,0,0,[1,42912,568],[[0,222,44,0,223,247,225,0,[1,42913,0],[[42913,2,260]]],[0,228,229,0,0,225,0,0,[1,42913,145],[[0,54,12,0,55,230,0,57,[1,42913,22],[[42934,2,231]]],[0,30,12,0,31,232,0,33,[1,42935,20],[[42935,2,261]]],[0,30,12,0,31,234,0,33,[1,42955,22],[[42955,2,262]]],[0,30,12,0,31,236,0,33,[1,42977,29],[[42977,2,95]]],[0,37,12,0,38,238,0,33,[1,43006,52],[]]]],[0,96,97,0,0,98,0,0,[1,43058,422],[[0,43,44,0,45,99,47,0,[1,43059,0],[[43059,2,100]]],[0,49,12,0,50,51,0,52,[1,43059,341],[[43400,2,101]]],[0,54,12,0,55,102,0,57,[1,43401,24],[[43425,2,263]]],[0,59,12,0,60,104,0,62,[1,43425,55],[[43480,2,264]]]]]]],[0,245,0,0,0,265,0,0,[1,43481,568],[[0,222,44,0,223,247,225,0,[1,43481,1],[[43482,2,266]]],[0,228,229,0,0,225,0,0,[1,43482,161],[[0,54,12,0,55,230,0,57,[1,43482,20],[[43502,2,231]]],[0,30,12,0,31,232,0,33,[1,43502,21],[[43503,2,233]]],[0,30,12,0,31,234,0,33,[1,43523,21],[[43524,2,267]]],[0,30,12,0,31,236,0,33,[1,43544,33],[[43544,2,268]]],[0,37,12,0,38,238,0,33,[1,43578,65],[]]]],[0,96,97,0,0,98,0,0,[1,43643,406],[[0,43,44,0,45,99,47,0,[1,43644,0],[[43644,2,100]]],[0,49,12,0,50,51,0,52,[1,43644,333],[[43977,2,101]]],[0,54,12,0,55,102,0,57,[1,43977,21],[[43998,2,112]]],[0,59,12,0,60,104,0,62,[1,43999,50],[[44049,2,269]]]]]]],[0,245,0,0,0,270,0,0,[1,44050,549],[[0,222,44,0,223,247,225,0,[1,44050,1],[[44051,2,271]]],[0,228,229,0,0,225,0,0,[1,44051,144],[[0,54,12,0,55,230,0,57,[1,44051,21],[[44072,2,231]]],[0,30,12,0,31,232,0,33,[1,44072,20],[[44073,2,272]]],[0,30,12,0,31,234,0,33,[1,44092,21],[[44093,2,273]]],[0,30,12,0,31,236,0,33,[1,44113,20],[[44114,2,274]]],[0,37,12,0,38,238,0,33,[1,44133,62],[]]]],[0,96,97,0,0,98,0,0,[1,44195,404],[[0,43,44,0,45,99,47,0,[1,44195,1],[[44196,2,100]]],[0,49,12,0,50,51,0,52,[1,44196,331],[[44527,2,101]]],[0,54,12,0,55,102,0,57,[1,44527,25],[[44551,2,275]]],[0,59,12,0,60,104,0,62,[1,44552,47],[[44599,2,276]]]]]]],[2,59,12,0,60,0,0,62,[1,44600,40],[[44640,2,277]]]]]],[],[2,2,0,0]],[278,279,280,281,[],[1,44689,4033],[],[[282,0,0,[],[1,44695,3913],[[0,11,12,0,13,283,0,15,[1,44698,1089],[[44699,2,284],[45787,2,285]]],[0,18,12,0,19,286,0,15,[1,45830,717],[[46547,2,21],[46547,2,22]]],[0,54,12,0,55,287,0,57,[1,46548,56],[[46604,2,288]]],[0,289,44,0,290,291,0,0,[1,46604,2002],[[48606,2,292]]]]]],[],[1,1,0,0]]],[],[],[11,11,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Tests","*C:\\QAx\\projects\\smartbit-robot\\web\\tests","*../tests","*Login","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\login.robot","*../tests/login.robot","*<p>Cenários de testes do Login SAC\x3c/p>","*Deve logar como Gestor de Academia","*Start session","*Base","*New Browser","*Browser","*<p>Create a new playwright Browser with specified options.\x3c/p>","*browser=firefox    headless=False","*BrowserControl, Setter","*{\"browser\": \"firefox\", \"headless\": false, \"chromiumSandbox\": false, \"devtools\": false, \"handleSIGHUP\": true, \"handleSIGINT\": true, \"handleSIGTERM\": true, \"slowMo\": 0.0, \"timeout\": 30000.0, \"tracesDir\": \"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\292e16f7-ce35-48db-8d77-b00fc49fcc54\"}","*Successfully created browser with options: {\"browser\":\"firefox\",\"headless\":false,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\292e16f7-ce35-48db-8d77-b00fc49fcc54\"}","*New Page","*<p>Open a new Page.\x3c/p>","*<a href=\"http://localhost:3000\">http://localhost:3000\x3c/a>","*Successfully initialized new page object and opened url: <a href=\"http://localhost:3000\">http://localhost:3000\x3c/a>","*No context was open. New context was automatically opened when this page is created.","*Go to login Page","*Go To","*<p>Navigates to the given <code>url\x3c/code>.\x3c/p>","*<a href=\"http://localhost:3000/login\">http://localhost:3000/login\x3c/a>","*Successfully opened URL <a href=\"http://localhost:3000/login\">http://localhost:3000/login\x3c/a>","*Submit login form","*sac@smartbit.com    pwd123","*Fill Text","*<p>Clears and fills the given <code>txt\x3c/code> into the text field found by <code>selector\x3c/code>.\x3c/p>","*css=input[name=email]    ${email}","*PageContent, Setter","*Fills the text 'sac@smartbit.com' in the given field.","*css=input[name=password]    ${password}","*Fills the text 'pwd123' in the given field.","*Click","*<p>Simulates mouse click on the element found by <code>selector\x3c/code>.\x3c/p>","*css=button &gt;&gt; text=Entrar","*User is logged input","*Accounts","*sac@smartbit.com","*Set Variable","*BuiltIn","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*css=.logged-user","*${element}","*${element} = css=.logged-user","*Wait For Elements State","*<p>Waits for the element found by <code>selector\x3c/code> to satisfy state option.\x3c/p>","*${element}    visible    5","*PageContent, Wait","*Waited for Element with selector css=.logged-user at state visible","*Get Text","*<p>Returns text attribute of the element found by <code>selector\x3c/code>.\x3c/p>","*${element}    equal    ${email}","*Assertion, Getter, PageContent","*Text: 'sac@smartbit.com'","*Take Screenshot","*<p>Takes a screenshot of the current window or element and saves it to disk.\x3c/p>","*selector=${element}","*PageContent","eNqlj0sKwyAQQK8is09N6aYL9SrFz0RDEkfGAXP8hlLoAbp4u8eDZ7QkZ7SwMx+SirT35quFBzjjVWFcLASm0ZF1j4xYeyHRTIFkYX/gIN6mrzH9jOl+azWDEs8ZxcIr7L5uV3Q9suoc/6uONUmx8JzndoK+Frx7A26lSVM=","eNqlj0sKwyAQQK8is08N7aYL9SrFz0RDEkfGAXP8hlLoAbp4u8eDZ7QkZ7SwMx+SirT35quFBzjjVWFcLASm0ZF1j4xYeyHRTIFkYX/gIN6mrzH9jOl+azWDEs8ZxcIr7L5uV3Q9suoc/6uONUmx8JzndoK+Frx7A28vSVU=","*Não deve logar com senha incorreta","*inv_pass","*Switching browser to browser=7cf942fe-27a3-434c-b3f1-7b5e447597c1","*Successfully changed active browser: browser=7cf942fe-27a3-434c-b3f1-7b5e447597c1","*Reusing existing browser with id: browser=7cf942fe-27a3-434c-b3f1-7b5e447597c1","*sac@smartbit.com    pwd@987","*Fills the text 'pwd@987' in the given field.","*Toast should be","*Toast","*As credenciais de acesso fornecidas são inválidas. Tente novamente!","*.Toastify__toast-body","*${selector}","*${selector} = .Toastify__toast-body","*css=${selector}    visible    5","*Waited for Element with selector css=.Toastify__toast-body at state visible","*css=${selector}    equal    ${expected_text}","*Text: 'As credenciais de acesso fornecidas são inválidas. Tente novamente!'","*selector=${selector}","eNqlj0EKwyAQAL8ie7cGculB/UpRs9GQxJV1wTy/oRT6gB7mNgyMNbJ4a4S9/bCoREdvoTqYwdugCuPqIDKNjmx6YsTaC4lhiiQrhxMH8a6/hv4Zen60mkFJ4Izi4BWPUPc7up1ZdU7/Vce2SHHwnKZ2gbkXgn8Db7lJVw==","eNqlj0sKwyAQQK8is08NtIsu1KsUPxMNSRwZB8zxG0qhB+ji7R4PntGSnNHCznxIKtLem68W7uCMV4VxsRCYRkfWPTJi7YVEMwWShf2Bg3ibvsb0M6bHrdUMSjxnFAuvsPu6XdH1yKpz/K861iTFwnOe2wn6WvDuDXBDSVk=","*Não deve logar com email não cadastrado","*inv_email","*404@smartbit.com    pwd@987","*Fills the text '404@smartbit.com' in the given field.","eNqlj0sKwyAQQK8is08NlEIX6lWKn4mGJI6MA+b4DaXQA3Txdo8Hz2hJzmhhZz4kFWnvzVcLd3DGq8K4WAhMoyPrHhmx9kKimQLJwv7AQbxNX2P6GdPj1moGJZ4zioVX2H3druh6ZNU5/lcda5Ji4TnP7QR9LXj3BnDNSVs=","eNqlj0sKwyAQQK8is08NFEoX6lWKn4mGJI6MA+b4DaXQA3Txdo8Hz2hJzmhhZz4kFWnvzVcLd3DGq8K4WAhMoyPrHhmx9kKimQLJwv7AQbxNX2P6GdPj1moGJZ4zioVX2H3druh6ZNU5/lcda5Ji4TnP7QR9LXj3BnFXSV0=","*Tentativa de login com dados incorretos","*Login with verify notice","*${EMPTY}    ${EMPTY}    Os campos email e senha são obrigatórios.","*${email}    ${password}","*Fills the text '' in the given field.","*Notice should be","*BoxNotice","*${output_message}","*css=form .notice","*${element} = css=form .notice","*Waited for Element with selector css=form .notice at state visible","*${element}    equal    ${target}","*Text: 'Os campos email e senha são obrigatórios.'","*selector=form .notice","eNqlj0sKwyAQQK8is08NdNEu1KsUPxMNSRwZB8zxG0qhB+ji7R4PntGSnNHCznxIKtLem68W7uCMV4VxsRCYRkfWPTJi7YVEMwWShf2Bg3ibvsb0M6bHrdUMSjxnFAuvsPu6XdH1yKpz/K861iTFwnOe2wn6WvDuDXHhSV8=","*${EMPTY}    pwd123    Os campos email e senha são obrigatórios.","eNqlj0EKwyAQAL8ie08N9JKD+pWy6kZDEpV1wTy/oRT6gB7mNgyM0RKd0cLOfIgq1KM3LBae4AyqzLRa8FxHJ9Y9MFHpuYrm6qusjCeNyvv0NaafMS2PVhIoQU4kFl7+wLLf0e1MqnP4rzq2KNnCMs/tAn0voHsDcmtJYQ==","*sac@smartbit.com    ${EMPTY}    Os campos email e senha são obrigatórios.","eNqlj0sKwyAQQK8is08NdNOCepXiZ6IhiSPjgDl+Qyn0AF283ePBM1qSM1rYmQ9JRdp789XCHZzxqjAuFgLT6Mi6R0asvZBopkCysD9wEG/T15h+xvS8tZpBieeMYuEVdl+3K7oeWXWO/1XHmqRYeMxzO0FfC969AXL1SWM=","*sac&amp;&amp;smartbit.com    pwd123    Oops! O email informado é inválido","*Fills the text 'sac&amp;&amp;smartbit.com' in the given field.","*Text: 'Oops! O email informado é inválido'","eNqlj0sKwyAUAK8ib2+1dNOFepXi50VDEpXnA3P8hlLoAbqY3TAwRnFyRjE58yGJ2PbRfbXwAGe8KISLhUBtDiQ1IiHWURoraqHxQv7A2WiTX0P+DHnXt14zCPaUkS28wu7rdlXXI4tB8c/sXBMXC0+t+wnqmvDuDeyRSbM=","eNqlj0EKwyAQAL8ie7cm9NKD+pWyUaMhiSvrgn1+Qyn0AT3MbRgYayR6a4S9/RBVoKM3rA7u4C2qwml1sDCNntj0wCnVXkgM00KyMp5pEO/6a+ifoef51moGJcg5iYPncmDdr+p2ZtU5/JkdW5Ti4DFN7QXmmkD/Bu0cSbU=","*Memberships","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\memberships.robot","*../tests/memberships.robot","*<p>suite de testes de adesões de planos\x3c/p>","*Deve poder realizar uma nova adesão","*Get Json fixture","*memberships    create","*${data}","*Load Json From File","*JSONLibrary","*<p>Load JSON from file.\x3c/p>","*${EXECDIR}/resources/fixtures/${file_name}.json    encoding=utf-8","*${data} = {'create': {'account': {'name': 'Wellington Rodrigues', 'email': 'WellingtonAvon@test.com', 'cpf': '35400747086'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number':...","*${data}[${scenario}]","*${data} = {'account': {'name': 'Wellington Rodrigues', 'email': 'WellingtonAvon@test.com', 'cpf': '35400747086'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number': '424242424...","*Delete Account By Email","*Database","*${data}[account][email]","*Insert Account","*${data}[account]","*SignIn admin","*${ADMIN_EMAIL}    ${ADMIN_PASS}","*User is logged in","*Navbar","*${ADMIN_EMAIL}","*Go to memberships","*css=a[href=\"/memberships\"]","*css=h1 &gt;&gt; text=Matrículas    visible    5","*Waited for Element with selector css=h1 &gt;&gt; text=Matrículas at state visible","*Create new membership","*Go to memberships form","*css=a[href=\"/memberships/new\"]","*css=h1 &gt;&gt; text=Nova matrícula    visible    5","*Waited for Element with selector css=h1 &gt;&gt; text=Nova matrícula at state visible","*Select account","*${data}[account][name]    ${data}[account][cpf]","*css=input[aria-label=select_account]    ${name}","*Fills the text 'Wellington Rodrigues' in the given field.","*css=[data-testid=\"${cpf}\"]","*Select plan","*${data}[plan][name]","*css=input[aria-label=select_plan]    ${plan_name}","*Fills the text 'Plano Black' in the given field.","*css=div[class$=option] &gt;&gt; text=${plan_name}","*Fill payment card","*${data}[credit_card]","*css=input[name=card_number]    ${card}[number]","*Fills the text '4242424242424242' in the given field.","*css=input[name=\"card_holder\"]    ${card}[holder]","*Fills the text 'Wellington Avon' in the given field.","*css=input[name=\"card_month\"]    ${card}[month]","*Fills the text '12' in the given field.","*css=input[name=\"card_year\"]    ${card}[year]","*Fills the text '2032' in the given field.","*css=input[name=\"card_cvv\"]    ${card}[cvv]","*Fills the text '123' in the given field.","*css=button[type=submit] &gt;&gt; text=Cadastrar","*Matrícula cadastrada com sucesso.","*Text: 'Matrícula cadastrada com sucesso.'","eNqlj0EKwyAQAL8ie09N20sP6lfKqhsNSVTWBfv8hlLoA3qY2zAwRkt0Rgs78yGqUPfesFi4gzOoMtNiwXMdnVj3wESl5yqaq6+yMB40Km/T15h+xnS9XVpJoAQ5kVh4+h3LdlbXI6nO4c/sWKNkC495bi/Q5wS6N+2nSbc=","eNqlj0sKwyAQQK8is09NyaYL9SrFz0RDEkfGAXv8hlLoAbp4u8eDZ7QkZ7SwMx+SinT05quFBZzxqjCuFgLT6Mi6R0asvZBopkCysj9xEO/T15h+xnRfbq1mUOI5o1h4hsPX/apuZ1ad45/ZsSUpFh7z3F6grwnv3u4ySbk=","*Não deve realizar adesão duplicada","*dup","*memberships    duplicate","*${data} = {'account': {'name': 'Galdino Silva', 'email': 'GaldinoSilva@test.com', 'cpf': '78180915050'}, 'plan': {'name': 'Plano Smart', 'id': 1, 'price': 99.99}, 'credit_card': {'number': '5555555555554444', '...","*Insert Membership","*Fills the text 'Galdino Silva' in the given field.","*Fills the text 'Plano Smart' in the given field.","*Fills the text '5555555555554444' in the given field.","*Fills the text '11' in the given field.","*Fills the text '2031' in the given field.","*O usuário já possui matrícula.","*Text: 'O usuário já possui matrícula.'","eNqlj0EKwyAQAL8ie09NaQ89qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3u69Sbs=","eNqlj0EKwyAQAL8ie09NKYUe1K+UVTcakqisC/b5DaXQB/Qwt2FgjJbojBZ25kNUoe69YbFwA2dQZabFguc6OrHugYlKz1U0V19lYTxoVN6mrzH9jOl6v7SSQAlyIrHw9DuW7ayuR1Kdw5/ZsUbJFh7z3F6gzwl0b+9ISb0=","*Deve buscar por nome","*search","*memberships    search","*${data} = {'account': {'name': 'Neire Silva', 'email': 'neireSilva@test.com', 'cpf': '77050489069'}, 'plan': {'name': 'Plano Smart', 'id': 1, 'price': 99.99}, 'credit_card': {'number': '5105105105105100', 'hold...","*Search by name","*${data}[account][name]","*css=input[placeholder^=Busque]    ${name}","*Fills the text 'Neire Silva' in the given field.","*css=strong &gt;&gt; text=Total: 1    Visible    5","*Waited for Element with selector css=strong &gt;&gt; text=Total: 1 at state visible","*Should filter by name","*css=table tbody tr &gt;&gt; text=${name}    Visible    5","*Waited for Element with selector css=table tbody tr &gt;&gt; text=Neire Silva at state visible","eNqlj0EKwyAQAL8ie09NKZQe1K+UVTcakqisC/b5DaXQB/Qwt2FgjJbojBZ25kNUoe69YbFwA2dQZabFguc6OrHugYlKz1U0V19lYTxoVN6mrzH9jOl6v7SSQAlyIrHw9DuW7ayuR1Kdw5/ZsUbJFh7z3F6gzwl0b+/TSb8=","*Deve excluir uma matricula","*remove","*memberships    remove","*${data} = {'account': {'name': 'Iolanda Lima', 'email': 'iolandalima@test.com', 'cpf': '83398739032'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number': '6011000990139424', '...","*Request removal","*xpath=//td[text()=\"${name}\"]/..//button","*Confirm removal","*modal","*css=.swal2-confirm","*Membership should be visible","*css=table tbody tr &gt;&gt; text=${name}    detached    5","*Waited for Element with selector css=table tbody tr &gt;&gt; text=Iolanda Lima at state detached","eNqlj0EKwyAQAL8ie09N6aE9qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3vBeScE=","*Signup","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\signup.robot","*../tests/signup.robot","*<p>Cenários de testes de pré-cadastro de cliente\x3c/p>","*Deve iniciar o cadastro de cliente","*smoke","*Create Dictionary","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*name=Diego Lima    email=diegolima@teste.com.br    cpf=99414605070","*${account}","*${account} = {'name': 'Diego Lima', 'email': 'diegolima@teste.com.br', 'cpf': '99414605070'}","*${account}[email]","*Submit signup form","*Landing","*css=#signup h2    equal    Faça seu cadastro e venha para a Smartbit!","*Text: 'Faça seu cadastro e venha para a Smartbit!'","*id=name    ${account}[name]","*Fills the text 'Diego Lima' in the given field.","*id=email    ${account}[email]","*Fills the text 'diegolima@teste.com.br' in the given field.","*id=cpf    ${account}[cpf]","*Fills the text '99414605070' in the given field.","*css=button &gt;&gt; text=Cadastrar","*Verify welcome message","*Welcome","*text=Falta pouco para fazer parte da família Smartbit!    visible    5","*Waited for Element with selector text=Falta pouco para fazer parte da família Smartbit! at state visible","eNqlj0sKwyAQQK8is09N6SYL9Spl/ERDEkfGAXv8hlLoAbp4u8eDZ7REZ7SwMx+iCnT0htXCA5xBVTitFjzT6Il1D5xS7YVEM3mSlfFMg3ifvsb0M6b7cms1gxLknMTC0x9Y96u6nVl1Dn9mxxalWFjmub1AXxPo3vDpScM=","*Tentativa de pré-cadastro","*Attempt signup","*${EMPTY}    galdino.silva@teste.com    11809003083    Por favor informe o seu nome completo","*name=${name}    email=${email}    cpf=${cpf}","*${account} = {'name': '', 'email': 'galdino.silva@teste.com', 'cpf': '11809003083'}","*Fills the text 'galdino.silva@teste.com' in the given field.","*Fills the text '11809003083' in the given field.","*Text: 'Por favor informe o seu nome completo'","eNqlj0EKwyAQAL8ie09N6aUF9Stl1Y2GJCrrgn1+Qyn0AT3MbRgYoyU6o4Wd+RBVqHtvWCzcwBlUmWmx4LmOTqx7YKLScxXN1VdZGA8albfpa0w/Y7o+Lq0kUIKcSCw8/Y5lO6vrkVTn8Gd2rFGyhfs8txfocwLdG/F0ScU=","*Wellington Silva    ${EMPTY}    32218868024    Por favor, informe o seu melhor e-mail","*${account} = {'name': 'Wellington Silva', 'email': '', 'cpf': '32218868024'}","*Fills the text 'Wellington Silva' in the given field.","*Fills the text '32218868024' in the given field.","*Text: 'Por favor, informe o seu melhor e-mail'","eNqlj0sKwyAUAK8ib2+VdtOFepXi50VDEpXnA3P8hlLoAbqY3TAwRnFyRjE58yGJ2PbRfbXwAGe8KISLhUBtDiQ1IiHWURoraqHxQv7A2WiTX0P+DHnXt14zCPaUkS28wu7rdlXXI4tB8c/sXBMXC0+t+wnqmvDuDe0eSbU=","*Neire Fernandes    neire.fernandes@teste.com    ${EMPTY}    Por favor, informe o seu CPF","*${account} = {'name': 'Neire Fernandes', 'email': 'neire.fernandes@teste.com', 'cpf': ''}","*Fills the text 'Neire Fernandes' in the given field.","*Fills the text 'neire.fernandes@teste.com' in the given field.","*Text: 'Por favor, informe o seu CPF'","eNqlj0EKwyAQAL8ie09N20sP6lfKqhsNSVTWBfv8hlLoA3qY2zAwRkt0Rgs78yGqUPfesFi4gzOoMtNiwXMdnVj3wESl5yqaq6+yMB40Km/T15h+xnS7XlpJoAQ5kVh4+h3LdlbXI6nO4c/sWKNkC495bi/Q5wS6N+2pSbc=","*Diego Lima    diego.lima*teste.com.br    00255108001    Oops! O email informado é inválido","*${account} = {'name': 'Diego Lima', 'email': 'diego.lima*teste.com.br', 'cpf': '00255108001'}","*Fills the text 'diego.lima*teste.com.br' in the given field.","*Fills the text '00255108001' in the given field.","eNqlj0EKwyAQAL8ie7eG9NKD+pWyUaMhiSvrgn1+Qyn0AT3MbRgYayR6a4S9/RBVoKM3rA7u4C2qwml1sDCNntj0wCnVXkgM00KyMp5pEO/6a+ifoef51moGJcg5iYPncmDdr+p2ZtU5/JkdW5Ti4DFN7QXmmkD/Bu40Sbk=","*Paulo Silva    paulo.silva@teste.com.br    7319756005&amp;    Oops! O CPF informado é inválido","*${account} = {'name': 'Paulo Silva', 'email': 'paulo.silva@teste.com.br', 'cpf': '7319756005&amp;'}","*Fills the text 'Paulo Silva' in the given field.","*Fills the text 'paulo.silva@teste.com.br' in the given field.","*Fills the text '7319756005&amp;' in the given field.","*Text: 'Oops! O CPF informado é inválido'","eNqlj0sKwyAQQK8is08NzaYL9SrFz0RDEkfGAXv8hlLoAbp4u8eDZ7QkZ7SwMx+SinT05quFBZzxqjCuFgLT6Mi6R0asvZBopkCysj9xEO/T15h+xnRfbq1mUOI5o1h4hsPX/apuZ1ad45/ZsSUpFh7z3F6grwnv3u6/Sbs=","eNqlj0EKwyAQAL8ie08NbQ89qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3u9KSb0=","*Slogan","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\slogan.robot","*../tests/slogan.robot","*<p>Teste para veficar o Slogan da Smartbit na WebApp\x3c/p>","*Deve exibir o Slogan na Landing Page","*browser=chromium    headless=False","eNptj8sKwjAQRX9FsjYSbX3UnaioC8XnbjZJM9pK6kiSWkH8d4MKKji7c+5lmLkxZalyaFm/xtLMUpGXBavXWIZSG3Qu+L00DuufeCNPWtH1K9F48UTmu5yFksHNbDLdLYP2tvyxs8X2j92O1/OPdoaqOQUWDRHQ5wVS6QNHIszLWZmiG+XP84d9gNXgCnC2dMTUOwBXSOtV7rklRR6gQgVg6BCi998Arx0A7QTTRCY9Hsm4xeMWdnkSS8F7utkVOoranY5g9wfgH2K0","*Successfully created browser with options: {\"browser\":\"chromium\",\"headless\":false,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\59ec9a98-3a42-42e7-94a0-8d170d335660\"}","*css=.headline h2    equal    Sua Jornada Fitness Começa aqui!","*Text: 'Sua Jornada Fitness Começa aqui!'","*Sleep","*<p>Pauses the test executed for the given time.\x3c/p>","*2","*Slept 2 seconds.","*Error in file 'C:\\QAx\\projects\\smartbit-robot\\web\\resources\\Base.resource' on line 37: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead."]);
+window.output["strings"] = window.output["strings"].concat(["*","*Tests","*C:\\QAx\\projects\\smartbit-robot\\web\\tests","*../tests","*Login","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\login.robot","*../tests/login.robot","*<p>Cenários de testes do Login SAC\x3c/p>","*Deve logar como Gestor de Academia","*Start session","*Base","*New Browser","*Browser","*<p>Create a new playwright Browser with specified options.\x3c/p>","*browser=firefox, headless=true","*BrowserControl, Setter","*{\"browser\": \"firefox\", \"headless\": true, \"chromiumSandbox\": false, \"devtools\": false, \"handleSIGHUP\": true, \"handleSIGINT\": true, \"handleSIGTERM\": true, \"slowMo\": 0.0, \"timeout\": 30000.0, \"tracesDir\": \"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\e70f6f16-ac96-44cc-8b95-27f2100c4aec\"}","*Successfully created browser with options: {\"browser\":\"firefox\",\"headless\":true,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\e70f6f16-ac96-44cc-8b95-27f2100c4aec\"}","*New Page","*<p>Open a new Page.\x3c/p>","*${BASE_URL}","*Successfully initialized new page object and opened url: <a href=\"http://localhost:3000\">http://localhost:3000\x3c/a>","*No context was open. New context was automatically opened when this page is created.","*Go to login Page","*Go To","*<p>Navigates to the given <code>url\x3c/code>.\x3c/p>","*${BASE_URL}/login","*Successfully opened URL <a href=\"http://localhost:3000/login\">http://localhost:3000/login\x3c/a>","*Submit login form","*sac@smartbit.com, pwd123","*Fill Text","*<p>Clears and fills the given <code>txt\x3c/code> into the text field found by <code>selector\x3c/code>.\x3c/p>","*css=input[name=email], ${email}","*PageContent, Setter","*Fills the text 'sac@smartbit.com' in the given field.","*css=input[name=password], ${password}","*Fills the text 'pwd123' in the given field.","*Click","*<p>Simulates mouse click on the element found by <code>selector\x3c/code>.\x3c/p>","*css=button &gt;&gt; text=Entrar","*User is logged input","*Accounts","*sac@smartbit.com","*Set Variable","*BuiltIn","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*css=.logged-user","*${element}","*${element} = css=.logged-user","*Wait For Elements State","*<p>Waits for the element found by <code>selector\x3c/code> to satisfy state option.\x3c/p>","*${element}, visible, 5","*PageContent, Wait","*Waited for Element with selector css=.logged-user at state visible","*Get Text","*<p>Returns text attribute of the element found by <code>selector\x3c/code>.\x3c/p>","*${element}, equal, ${email}","*Assertion, Getter, PageContent","*Text: 'sac@smartbit.com'","*Take Screenshot","*<p>Takes a screenshot of the current window or element and saves it to disk.\x3c/p>","*selector=${element}","*PageContent","eNqlj0sKwyAQQK8is09N6aYL9SrFz0RDEkfGAXP8hlLoAbp4u8eDZ7QkZ7SwMx+SirT35quFBzjjVWFcLASm0ZF1j4xYeyHRTIFkYX/gIN6mrzH9jOl+azWDEs8ZxcIr7L5uV3Q9suoc/6uONUmx8JzndoK+Frx7A26lSVM=","eNqlj0sKwyAQQK8is08N7aYL9SrFz0RDEkfGAXP8hlLoAbp4u8eDZ7QkZ7SwMx+SirT35quFBzjjVWFcLASm0ZF1j4xYeyHRTIFkYX/gIN6mrzH9jOl+azWDEs8ZxcIr7L5uV3Q9suoc/6uONUmx8JzndoK+Frx7A28vSVU=","*Não deve logar com senha incorreta","*inv_pass","*Switching browser to browser=33e6a401-f3eb-4524-8e06-638e690c67a8","*Successfully changed active browser: browser=33e6a401-f3eb-4524-8e06-638e690c67a8","*Reusing existing browser with id: browser=33e6a401-f3eb-4524-8e06-638e690c67a8","*sac@smartbit.com, pwd@987","*Fills the text 'pwd@987' in the given field.","*Toast should be","*Toast","*As credenciais de acesso fornecidas são inválidas. Tente novamente!","*.Toastify__toast-body","*${selector}","*${selector} = .Toastify__toast-body","*css=${selector}, visible, 5","*Waited for Element with selector css=.Toastify__toast-body at state visible","*css=${selector}, equal, ${expected_text}","*Text: 'As credenciais de acesso fornecidas são inválidas. Tente novamente!'","*selector=${selector}","eNqlj0EKwyAQAL8ie7cGculB/UpRs9GQxJV1wTy/oRT6gB7mNgyMNbJ4a4S9/bCoREdvoTqYwdugCuPqIDKNjmx6YsTaC4lhiiQrhxMH8a6/hv4Zen60mkFJ4Izi4BWPUPc7up1ZdU7/Vce2SHHwnKZ2gbkXgn8Db7lJVw==","eNqlj0sKwyAQQK8is08NtIsu1KsUPxMNSRwZB8zxG0qhB+ji7R4PntGSnNHCznxIKtLem68W7uCMV4VxsRCYRkfWPTJi7YVEMwWShf2Bg3ibvsb0M6bHrdUMSjxnFAuvsPu6XdH1yKpz/K861iTFwnOe2wn6WvDuDXBDSVk=","*Não deve logar com email não cadastrado","*inv_email","*404@smartbit.com, pwd@987","*Fills the text '404@smartbit.com' in the given field.","eNqlj0sKwyAQQK8is08NlEIX6lWKn4mGJI6MA+b4DaXQA3Txdo8Hz2hJzmhhZz4kFWnvzVcLd3DGq8K4WAhMoyPrHhmx9kKimQLJwv7AQbxNX2P6GdPj1moGJZ4zioVX2H3druh6ZNU5/lcda5Ji4TnP7QR9LXj3BnDNSVs=","eNqlj0sKwyAQQK8is08NFEoX6lWKn4mGJI6MA+b4DaXQA3Txdo8Hz2hJzmhhZz4kFWnvzVcLd3DGq8K4WAhMoyPrHhmx9kKimQLJwv7AQbxNX2P6GdPj1moGJZ4zioVX2H3druh6ZNU5/lcda5Ji4TnP7QR9LXj3BnFXSV0=","*Tentativa de login com dados incorretos","*Login with verify notice","*${EMPTY}, ${EMPTY}, Os campos email e senha são obrigatórios.","*${email}, ${password}","*Fills the text '' in the given field.","*Notice should be","*BoxNotice","*${output_message}","*css=form .notice","*${element} = css=form .notice","*Waited for Element with selector css=form .notice at state visible","*${element}, equal, ${target}","*Text: 'Os campos email e senha são obrigatórios.'","*selector=form .notice","eNqlj0sKwyAQQK8is08NdNEu1KsUPxMNSRwZB8zxG0qhB+ji7R4PntGSnNHCznxIKtLem68W7uCMV4VxsRCYRkfWPTJi7YVEMwWShf2Bg3ibvsb0M6bHrdUMSjxnFAuvsPu6XdH1yKpz/K861iTFwnOe2wn6WvDuDXHhSV8=","*${EMPTY}, pwd123, Os campos email e senha são obrigatórios.","eNqlj0EKwyAQAL8ie08N9JKD+pWy6kZDEpV1wTy/oRT6gB7mNgyM0RKd0cLOfIgq1KM3LBae4AyqzLRa8FxHJ9Y9MFHpuYrm6qusjCeNyvv0NaafMS2PVhIoQU4kFl7+wLLf0e1MqnP4rzq2KNnCMs/tAn0voHsDcmtJYQ==","*sac@smartbit.com, ${EMPTY}, Os campos email e senha são obrigatórios.","eNqlj0sKwyAQQK8is08NdNOCepXiZ6IhiSPjgDl+Qyn0AF283ePBM1qSM1rYmQ9JRdp789XCHZzxqjAuFgLT6Mi6R0asvZBopkCysD9wEG/T15h+xvS8tZpBieeMYuEVdl+3K7oeWXWO/1XHmqRYeMxzO0FfC969AXL1SWM=","*sac&amp;&amp;smartbit.com, pwd123, Oops! O email informado é inválido","*Fills the text 'sac&amp;&amp;smartbit.com' in the given field.","*Text: 'Oops! O email informado é inválido'","eNqlj0sKwyAUAK8ib2+1dNOFepXi50VDEpXnA3P8hlLoAbqY3TAwRnFyRjE58yGJ2PbRfbXwAGe8KISLhUBtDiQ1IiHWURoraqHxQv7A2WiTX0P+DHnXt14zCPaUkS28wu7rdlXXI4tB8c/sXBMXC0+t+wnqmvDuDeyRSbM=","eNqlj0EKwyAQAL8ie7cm9NKD+pWyUaMhiSvrgn1+Qyn0AT3MbRgYayR6a4S9/RBVoKM3rA7u4C2qwml1sDCNntj0wCnVXkgM00KyMp5pEO/6a+ifoef51moGJcg5iYPncmDdr+p2ZtU5/JkdW5Ti4DFN7QXmmkD/Bu0cSbU=","*Memberships","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\memberships.robot","*../tests/memberships.robot","*<p>suite de testes de adesões de planos\x3c/p>","*Deve poder realizar uma nova adesão","*Get Json fixture","*memberships, create","*${data}","*Load Json From File","*JSONLibrary","*<p>Load JSON from file.\x3c/p>","*${EXECDIR}/resources/fixtures/${file_name}.json, encoding=utf-8","*${data} = {'create': {'account': {'name': 'Wellington Rodrigues', 'email': 'WellingtonAvon@test.com', 'cpf': '35400747086'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number':...","*${data} = {'account': {'name': 'Wellington Rodrigues', 'email': 'WellingtonAvon@test.com', 'cpf': '35400747086'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number': '424242424...","*Delete Account By Email","*Database","*${data}[account][email]","*Insert Account","*${data}[account]","*SignIn admin","*${ADMIN_EMAIL}, ${ADMIN_PASS}","*User is logged in","*Navbar","*${ADMIN_EMAIL}","*Go to memberships","*css=a[href=\"/memberships\"]","*css=h1 &gt;&gt; text=Matrículas, visible, 5","*Waited for Element with selector css=h1 &gt;&gt; text=Matrículas at state visible","*Create new membership","*Go to memberships form","*css=a[href=\"/memberships/new\"]","*css=h1 &gt;&gt; text=Nova matrícula, visible, 5","*Waited for Element with selector css=h1 &gt;&gt; text=Nova matrícula at state visible","*Select account","*${data}[account][name], ${data}[account][cpf]","*css=input[aria-label=select_account], ${name}","*Fills the text 'Wellington Rodrigues' in the given field.","*css=[data-testid=\"${cpf}\"]","*Select plan","*${data}[plan][name]","*css=input[aria-label=select_plan], ${plan_name}","*Fills the text 'Plano Black' in the given field.","*css=div[class$=option] &gt;&gt; text=${plan_name}","*Fill payment card","*${data}[credit_card]","*css=input[name=card_number], ${card}[number]","*Fills the text '4242424242424242' in the given field.","*css=input[name=\"card_holder\"], ${card}[holder]","*Fills the text 'Wellington Avon' in the given field.","*css=input[name=\"card_month\"], ${card}[month]","*Fills the text '12' in the given field.","*css=input[name=\"card_year\"], ${card}[year]","*Fills the text '2032' in the given field.","*css=input[name=\"card_cvv\"], ${card}[cvv]","*Fills the text '123' in the given field.","*css=button[type=submit] &gt;&gt; text=Cadastrar","*Matrícula cadastrada com sucesso.","*Text: 'Matrícula cadastrada com sucesso.'","eNqlj0EKwyAQAL8ie09N20sP6lfKqhsNSVTWBfv8hlLoA3qY2zAwRkt0Rgs78yGqUPfesFi4gzOoMtNiwXMdnVj3wESl5yqaq6+yMB40Km/T15h+xnS9XVpJoAQ5kVh4+h3LdlbXI6nO4c/sWKNkC495bi/Q5wS6N+2nSbc=","eNqlj0sKwyAQQK8is09NyaYL9SrFz0RDEkfGAXv8hlLoAbp4u8eDZ7QkZ7SwMx+SinT05quFBZzxqjCuFgLT6Mi6R0asvZBopkCysj9xEO/T15h+xnRfbq1mUOI5o1h4hsPX/apuZ1ad45/ZsSUpFh7z3F6grwnv3u4ySbk=","*Não deve realizar adesão duplicada","*dup","*memberships, duplicate","*${data} = {'account': {'name': 'Galdino Silva', 'email': 'GaldinoSilva@test.com', 'cpf': '78180915050'}, 'plan': {'name': 'Plano Smart', 'id': 1, 'price': 99.99}, 'credit_card': {'number': '5555555555554444', '...","*Insert Membership","*Fills the text 'Galdino Silva' in the given field.","*Fills the text 'Plano Smart' in the given field.","*Fills the text '5555555555554444' in the given field.","*Fills the text '11' in the given field.","*Fills the text '2031' in the given field.","*O usuário já possui matrícula.","*Text: 'O usuário já possui matrícula.'","eNqlj0EKwyAQAL8ie09NaQ89qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3u69Sbs=","eNqlj0EKwyAQAL8ie09NKYUe1K+UVTcakqisC/b5DaXQB/Qwt2FgjJbojBZ25kNUoe69YbFwA2dQZabFguc6OrHugYlKz1U0V19lYTxoVN6mrzH9jOl6v7SSQAlyIrHw9DuW7ayuR1Kdw5/ZsUbJFh7z3F6gzwl0b+9ISb0=","*Deve buscar por nome","*search","*memberships, search","*${data} = {'account': {'name': 'Neire Silva', 'email': 'neireSilva@test.com', 'cpf': '77050489069'}, 'plan': {'name': 'Plano Smart', 'id': 1, 'price': 99.99}, 'credit_card': {'number': '5105105105105100', 'hold...","*Search by name","*${data}[account][name]","*css=input[placeholder^=Busque], ${name}","*Fills the text 'Neire Silva' in the given field.","*css=strong &gt;&gt; text=Total: 1, Visible, 5","*Waited for Element with selector css=strong &gt;&gt; text=Total: 1 at state visible","*Should filter by name","*css=table tbody tr &gt;&gt; text=${name}, Visible, 5","*Waited for Element with selector css=table tbody tr &gt;&gt; text=Neire Silva at state visible","eNqlj0EKwyAQAL8ie09NKZQe1K+UVTcakqisC/b5DaXQB/Qwt2FgjJbojBZ25kNUoe69YbFwA2dQZabFguc6OrHugYlKz1U0V19lYTxoVN6mrzH9jOl6v7SSQAlyIrHw9DuW7ayuR1Kdw5/ZsUbJFh7z3F6gzwl0b+/TSb8=","*Deve excluir uma matricula","*remove","*memberships, remove","*${data} = {'account': {'name': 'Iolanda Lima', 'email': 'iolandalima@test.com', 'cpf': '83398739032'}, 'plan': {'name': 'Plano Black', 'id': '2', 'price': 79.99}, 'credit_card': {'number': '6011000990139424', '...","*Request removal","*xpath=//td[text()=\"${name}\"]/..//button","*Confirm removal","*modal","*css=.swal2-confirm","*Membership should be visible","*css=table tbody tr &gt;&gt; text=${name}, detached, 5","*Waited for Element with selector css=table tbody tr &gt;&gt; text=Iolanda Lima at state detached","eNqlj0EKwyAQAL8ie09N6aE9qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3vBeScE=","*Signup","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\signup.robot","*../tests/signup.robot","*<p>Cenários de testes de pré-cadastro de cliente\x3c/p>","*Deve iniciar o cadastro de cliente","*smoke","*Create Dictionary","*<p>Creates and returns a dictionary based on the given <code>items\x3c/code>.\x3c/p>","*name=Diego Lima, email=diegolima@teste.com.br, cpf=99414605070","*${account}","*${account} = {'name': 'Diego Lima', 'email': 'diegolima@teste.com.br', 'cpf': '99414605070'}","*${account}[email]","*Submit signup form","*Landing","*css=#signup h2, equal, Faça seu cadastro e venha para a Smartbit!","*Text: 'Faça seu cadastro e venha para a Smartbit!'","*id=name, ${account}[name]","*Fills the text 'Diego Lima' in the given field.","*id=email, ${account}[email]","*Fills the text 'diegolima@teste.com.br' in the given field.","*id=cpf, ${account}[cpf]","*Fills the text '99414605070' in the given field.","*css=button &gt;&gt; text=Cadastrar","*Verify welcome message","*Welcome","*text=Falta pouco para fazer parte da família Smartbit!, visible, 5","*Waited for Element with selector text=Falta pouco para fazer parte da família Smartbit! at state visible","eNqlj0sKwyAQQK8is09N6SYL9Spl/ERDEkfGAXv8hlLoAbp4u8eDZ7REZ7SwMx+iCnT0htXCA5xBVTitFjzT6Il1D5xS7YVEM3mSlfFMg3ifvsb0M6b7cms1gxLknMTC0x9Y96u6nVl1Dn9mxxalWFjmub1AXxPo3vDpScM=","*Tentativa de pré-cadastro","*Attempt signup","*${EMPTY}, galdino.silva@teste.com, 11809003083, Por favor informe o seu nome completo","*name=${name}, email=${email}, cpf=${cpf}","*${account} = {'name': '', 'email': 'galdino.silva@teste.com', 'cpf': '11809003083'}","*Fills the text 'galdino.silva@teste.com' in the given field.","*Fills the text '11809003083' in the given field.","*Text: 'Por favor informe o seu nome completo'","eNqlj0EKwyAQAL8ie09N6aUF9Stl1Y2GJCrrgn1+Qyn0AT3MbRgYoyU6o4Wd+RBVqHtvWCzcwBlUmWmx4LmOTqx7YKLScxXN1VdZGA8albfpa0w/Y7o+Lq0kUIKcSCw8/Y5lO6vrkVTn8Gd2rFGyhfs8txfocwLdG/F0ScU=","*Wellington Silva, ${EMPTY}, 32218868024, Por favor, informe o seu melhor e-mail","*${account} = {'name': 'Wellington Silva', 'email': '', 'cpf': '32218868024'}","*Fills the text 'Wellington Silva' in the given field.","*Fills the text '32218868024' in the given field.","*Text: 'Por favor, informe o seu melhor e-mail'","eNqlj0sKwyAUAK8ib2+VdtOFepXi50VDEpXnA3P8hlLoAbqY3TAwRnFyRjE58yGJ2PbRfbXwAGe8KISLhUBtDiQ1IiHWURoraqHxQv7A2WiTX0P+DHnXt14zCPaUkS28wu7rdlXXI4tB8c/sXBMXC0+t+wnqmvDuDe0eSbU=","*Neire Fernandes, neire.fernandes@teste.com, ${EMPTY}, Por favor, informe o seu CPF","*${account} = {'name': 'Neire Fernandes', 'email': 'neire.fernandes@teste.com', 'cpf': ''}","*Fills the text 'Neire Fernandes' in the given field.","*Fills the text 'neire.fernandes@teste.com' in the given field.","*Text: 'Por favor, informe o seu CPF'","eNqlj0EKwyAQAL8ie09N20sP6lfKqhsNSVTWBfv8hlLoA3qY2zAwRkt0Rgs78yGqUPfesFi4gzOoMtNiwXMdnVj3wESl5yqaq6+yMB40Km/T15h+xnS7XlpJoAQ5kVh4+h3LdlbXI6nO4c/sWKNkC495bi/Q5wS6N+2pSbc=","*Diego Lima, diego.lima*teste.com.br, 00255108001, Oops! O email informado é inválido","*${account} = {'name': 'Diego Lima', 'email': 'diego.lima*teste.com.br', 'cpf': '00255108001'}","*Fills the text 'diego.lima*teste.com.br' in the given field.","*Fills the text '00255108001' in the given field.","eNqlj0EKwyAQAL8ie7eG9NKD+pWyUaMhiSvrgn1+Qyn0AT3MbRgYayR6a4S9/RBVoKM3rA7u4C2qwml1sDCNntj0wCnVXkgM00KyMp5pEO/6a+ifoef51moGJcg5iYPncmDdr+p2ZtU5/JkdW5Ti4DFN7QXmmkD/Bu40Sbk=","*Paulo Silva, paulo.silva@teste.com.br, 7319756005&amp;, Oops! O CPF informado é inválido","*${account} = {'name': 'Paulo Silva', 'email': 'paulo.silva@teste.com.br', 'cpf': '7319756005&amp;'}","*Fills the text 'Paulo Silva' in the given field.","*Fills the text 'paulo.silva@teste.com.br' in the given field.","*Fills the text '7319756005&amp;' in the given field.","*Text: 'Oops! O CPF informado é inválido'","eNqlj0sKwyAQQK8is08NzaYL9SrFz0RDEkfGAXv8hlLoAbp4u8eDZ7QkZ7SwMx+SinT05quFBZzxqjCuFgLT6Mi6R0asvZBopkCysj9xEO/T15h+xnRfbq1mUOI5o1h4hsPX/apuZ1ad45/ZsSUpFh7z3F6grwnv3u6/Sbs=","eNqlj0EKwyAQAL8ie08NbQ89qF8pq240JFFZF+zzG0qhD+hhbsPAGC3RGS3szIeoQt17w2LhBs6gykyLBc91dGLdAxOVnqtorr7KwnjQqLxNX2P6GdP1fmklgRLkRGLh6Xcs21ldj6Q6hz+zY42SLTzmub1AnxPo3u9KSb0=","*Slogan","*C:\\QAx\\projects\\smartbit-robot\\web\\tests\\slogan.robot","*../tests/slogan.robot","*<p>Teste para veficar o Slogan da Smartbit na WebApp\x3c/p>","*Deve exibir o Slogan na Landing Page","*browser=chromium, headless=False","eNptj8GKwjAQhl9FcjYSbKXWm+iy60Fx1b3NJWmmtkvqSJJaYfHdHXRBBef2ff/PMPMnjKcuoBeTnigqT03dNqLfExVq6zAE9qV2AfuPeKsP1tD5KbF4ikTuuVxxyeF28fn1s2YdfftiF6vdG7v72CwfOjjqlsSsBoox1g1SG5kTxXN3XhcY5vXt/NkE4Ht6Bjh6+sUiBoDQaB9NHaUnQxGgQwPgaM/R/98A9x0sSjNKsxJlPrZDmSZZKvNcJdLiaKzzrDSpSsTlCuuXY1M=","*Successfully created browser with options: {\"browser\":\"chromium\",\"headless\":false,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"C:\\\\QAx\\\\projects\\\\smartbit-robot\\\\web\\\\logs\\\\browser\\\\traces\\\\bfb547fe-98d2-4374-9903-de58a97fb403\"}","*<a href=\"http://localhost:3000\">http://localhost:3000\x3c/a>","*css=.headline h2, equal, Sua Jornada Fitness Começa aqui!","*Text: 'Sua Jornada Fitness Começa aqui!'","*Sleep","*<p>Pauses the test executed for the given time.\x3c/p>","*2","*Slept 2 seconds"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:01:03","fail":0,"label":"All Tests","pass":11,"skip":0}],[{"elapsed":"00:00:05","fail":0,"label":"dup","pass":1,"skip":0},{"elapsed":"00:00:03","fail":0,"label":"inv_email","pass":1,"skip":0},{"elapsed":"00:00:03","fail":0,"label":"inv_pass","pass":1,"skip":0},{"elapsed":"00:00:04","fail":0,"label":"remove","pass":1,"skip":0},{"elapsed":"00:00:04","fail":0,"label":"search","pass":1,"skip":0},{"elapsed":"00:00:04","fail":0,"label":"smoke","pass":1,"skip":0}],[{"elapsed":"00:01:06","fail":0,"id":"s1","label":"Tests","name":"Tests","pass":11,"skip":0},{"elapsed":"00:00:23","fail":0,"id":"s1-s1","label":"Tests.Login","name":"Login","pass":4,"skip":0},{"elapsed":"00:00:17","fail":0,"id":"s1-s2","label":"Tests.Memberships","name":"Memberships","pass":4,"skip":0},{"elapsed":"00:00:08","fail":0,"id":"s1-s3","label":"Tests.Signup","name":"Signup","pass":2,"skip":0},{"elapsed":"00:00:17","fail":0,"id":"s1-s4","label":"Tests.Slogan","name":"Slogan","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:47","fail":0,"label":"All Tests","pass":11,"skip":0}],[{"elapsed":"00:00:04","fail":0,"label":"dup","pass":1,"skip":0},{"elapsed":"00:00:03","fail":0,"label":"inv_email","pass":1,"skip":0},{"elapsed":"00:00:03","fail":0,"label":"inv_pass","pass":1,"skip":0},{"elapsed":"00:00:03","fail":0,"label":"remove","pass":1,"skip":0},{"elapsed":"00:00:04","fail":0,"label":"search","pass":1,"skip":0},{"elapsed":"00:00:04","fail":0,"label":"smoke","pass":1,"skip":0}],[{"elapsed":"00:00:49","fail":0,"id":"s1","label":"Tests","name":"Tests","pass":11,"skip":0},{"elapsed":"00:00:22","fail":0,"id":"s1-s1","label":"Tests.Login","name":"Login","pass":4,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s2","label":"Tests.Memberships","name":"Memberships","pass":4,"skip":0},{"elapsed":"00:00:07","fail":0,"id":"s1-s3","label":"Tests.Signup","name":"Signup","pass":2,"skip":0},{"elapsed":"00:00:04","fail":0,"id":"s1-s4","label":"Tests.Slogan","name":"Slogan","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["errors"] = [[30,3,293]];
+window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1710427202882;
+window.output["baseMillis"] = 1710976380047;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 65963;
+window.output["generated"] = 48795;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -2109,7 +1834,7 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
 </script>
 <title></title>
 </head>
-<body data-theme="dark">
+<body>
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -2119,13 +1844,12 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
+
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    storage.init();
-    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -2133,7 +1857,6 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
-    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -2174,6 +1897,25 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
+        highlightLinkTarget();
+    }
+}
+
+function highlightLinkTarget() {
+    if (window.location.hash) {
+        var target = $(window.location.hash);
+        highlight(target);
+    }
+}
+
+function highlight(element, color) {
+    if (color === undefined)
+        color = 242;
+    if (color < 255) {
+        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
+        setTimeout(function () { highlight(element, color+1); }, 300);
+    } else {
+        element.css({'background-color': ''});
     }
 }
 
@@ -2191,6 +1933,7 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
+            highlightLinkTarget();
         }
     });
 }
@@ -2388,9 +2131,8 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span class="assign">{{html assign}}</span>
+        <span>{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
-        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2424,12 +2166,6 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
-        {{if message()}}
-        <tr>
-          <th>Message:</th>
-          <td class="message">{{html message()}}</td>
-        </tr>
-        {{/if}}
       </table>
     </div>
   </div>
@@ -2452,7 +2188,6 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
-      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

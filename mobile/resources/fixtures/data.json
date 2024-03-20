@@ -1,0 +1,42 @@
+{
+    "login": {
+        "account": {
+            "name": "Paulo Fernandes",
+            "email": "paulofernandes@test.com",
+            "cpf": "82476937045"
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": "2",
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Paulo Fernandes",
+            "month": "12",
+            "year": "2032",
+            "cvv": "123"
+        }
+    },
+    "update": {
+        "account": {
+            "name": "Jorge Lima",
+            "email": "JorgeLima@test.com",
+            "cpf": "67817108005",
+            "weight": "96.00",
+            "height": 175
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": "2",
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Jorge Lima",
+            "month": "12",
+            "year": "2032",
+            "cvv": "123"
+        }
+    }
+}

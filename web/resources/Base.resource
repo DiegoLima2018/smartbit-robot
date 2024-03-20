@@ -4,8 +4,8 @@ Documentation        Arquivo principal do projeto Robot
 Library         JSONLibrary
 
 Library         Browser
-Library         libs/Account.py
-Library         libs/Database.py
+Library         ../../libs/Account.py
+Library         ../../libs/Database.py
 
 Resource        pages/Landing.resource
 Resource        pages/Welcome.resource
